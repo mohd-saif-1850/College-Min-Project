@@ -1,0 +1,980 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard — Mail Service</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+
+<div class="dashboard">
+
+    <aside class="sidebar">
+
+        <div class="sidebar-top">
+
+            <a href="index.html" class="brand">
+                <img src="images/logo.png" alt="Mail Service">
+                <span>Mail Service</span>
+            </a>
+
+            <div class="workspace">
+                <div class="workspace-icon">MS</div>
+
+                <div class="workspace-info">
+                    <strong>My Workspace</strong>
+                    <span>Free plan</span>
+                </div>
+
+                <span class="workspace-arrow">⌄</span>
+            </div>
+
+            <nav class="sidebar-nav">
+
+                <div class="nav-section">
+                    <span class="nav-label">Overview</span>
+
+                    <a href="dashboard.html" class="sidebar-link active">
+                        <span class="nav-icon">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M4 13h6V4H4v9Zm0 7h6v-4H4v4Zm10 0h6v-9h-6v9Zm0-16v4h6V4h-6Z"/>
+                            </svg>
+                        </span>
+                        Overview
+                    </a>
+
+                    <a href="emails.html" class="sidebar-link">
+                        <span class="nav-icon">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M3 6.5A2.5 2.5 0 0 1 5.5 4h13A2.5 2.5 0 0 1 21 6.5v11a2.5 2.5 0 0 1-2.5 2.5h-13A2.5 2.5 0 0 1 3 17.5v-11ZM5 7l7 5 7-5"/>
+                            </svg>
+                        </span>
+                        Emails
+                    </a>
+
+                    <a href="templates.html" class="sidebar-link">
+                        <span class="nav-icon">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M5 4h14a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1Zm3 4h8M8 12h8M8 16h5"/>
+                            </svg>
+                        </span>
+                        Templates
+                    </a>
+
+                </div>
+
+                <div class="nav-section">
+
+                    <span class="nav-label">Infrastructure</span>
+
+                    <a href="api.html" class="sidebar-link">
+                        <span class="nav-icon">
+                            <svg viewBox="0 0 24 24">
+                                <path d="m8 8-4 4 4 4M16 8l4 4-4 4M14 5l-4 14"/>
+                            </svg>
+                        </span>
+                        API keys
+                    </a>
+
+                    <a href="logs.html" class="sidebar-link">
+                        <span class="nav-icon">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M6 3h12a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Zm3 5h6M9 12h6M9 16h4"/>
+                            </svg>
+                        </span>
+                        Delivery logs
+                    </a>
+
+                    <a href="webhooks.html" class="sidebar-link">
+                        <span class="nav-icon">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M12 3v5M12 16v5M3 12h5M16 12h5M5.6 5.6l3.5 3.5M14.9 14.9l3.5 3.5M18.4 5.6l-3.5 3.5M9.1 14.9l-3.5 3.5"/>
+                            </svg>
+                        </span>
+                        Webhooks
+                    </a>
+
+                </div>
+
+                <div class="nav-section">
+
+                    <span class="nav-label">Account</span>
+
+                    <a href="settings.html" class="sidebar-link">
+                        <span class="nav-icon">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M12 15.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Z"/>
+                                <path d="m19.4 15 .1.1-1.7 3-1.5-.6a7.9 7.9 0 0 1-2.1 1.2l-.2 1.6H10l-.2-1.6a7.9 7.9 0 0 1-2.1-1.2l-1.5.6-1.7-3 1.3-1a8 8 0 0 1 0-2.4l-1.3-1 1.7-3 1.5.6A7.9 7.9 0 0 1 9.8 7L10 5.4h4L14.2 7a7.9 7.9 0 0 1 2.1 1.2l1.5-.6 1.7 3-1.3 1a8 8 0 0 1 0 2.4l1.2 1Z"/>
+                            </svg>
+                        </span>
+                        Settings
+                    </a>
+
+                    <a href="billing.html" class="sidebar-link">
+                        <span class="nav-icon">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M4 6h16v13H4zM4 10h16M8 15h3"/>
+                            </svg>
+                        </span>
+                        Billing
+                    </a>
+
+                </div>
+
+            </nav>
+
+        </div>
+
+        <div class="sidebar-bottom">
+
+            <a href="docs.html" class="help-card">
+                <div class="help-icon">?</div>
+                <div>
+                    <strong>Need help?</strong>
+                    <span>Read the documentation</span>
+                </div>
+            </a>
+
+            <div class="user-card">
+
+                <div class="avatar">
+                    MS
+                </div>
+
+                <div class="user-info">
+                    <strong>Mohd Saif</strong>
+                    <span>saif@example.com</span>
+                </div>
+
+                <button class="more-button">•••</button>
+
+            </div>
+
+        </div>
+
+    </aside>
+
+    <main class="main-content">
+
+        <header class="topbar">
+
+            <div class="mobile-brand">
+                <img src="images/logo.png" alt="Mail Service">
+                <span>Mail Service</span>
+            </div>
+
+            <div class="topbar-right">
+
+                <a href="status.html" class="system-status">
+                    <span class="status-dot"></span>
+                    All systems operational
+                </a>
+
+                <button class="notification-button">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M18 9a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9ZM10 21h4"/>
+                    </svg>
+                    <span></span>
+                </button>
+
+                <div class="top-avatar">MS</div>
+
+            </div>
+
+        </header>
+
+        <div class="content">
+
+            <section class="page-header">
+
+                <div>
+                    <span class="page-kicker">OVERVIEW</span>
+
+                    <h1>Good morning, Saif.</h1>
+
+                    <p>
+                        Here's what's happening with your email infrastructure.
+                    </p>
+                </div>
+
+                <div class="header-actions">
+
+                    <button class="date-button">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M7 3v4M17 3v4M4 9h16M5 5h14a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1Z"/>
+                        </svg>
+                        Last 30 days
+                        <span>⌄</span>
+                    </button>
+
+                    <a href="send-email.html" class="send-button">
+                        <span>+</span>
+                        Send email
+                    </a>
+
+                </div>
+
+            </section>
+
+            <section class="metric-grid">
+
+                <article class="metric-card">
+
+                    <div class="metric-header">
+                        <span>Emails sent</span>
+
+                        <span class="metric-icon blue">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M4 5h16v14H4zM4 6l8 6 8-6"/>
+                            </svg>
+                        </span>
+                    </div>
+
+                    <div class="metric-value">2,481</div>
+
+                    <div class="metric-footer">
+                        <span class="positive">↑ 12.4%</span>
+                        <span>vs previous period</span>
+                    </div>
+
+                </article>
+
+                <article class="metric-card">
+
+                    <div class="metric-header">
+                        <span>Delivered</span>
+
+                        <span class="metric-icon green">
+                            <svg viewBox="0 0 24 24">
+                                <path d="m5 12 4 4L19 6"/>
+                            </svg>
+                        </span>
+                    </div>
+
+                    <div class="metric-value">2,443</div>
+
+                    <div class="metric-footer">
+                        <span class="positive">98.5%</span>
+                        <span>delivery rate</span>
+                    </div>
+
+                </article>
+
+                <article class="metric-card">
+
+                    <div class="metric-header">
+                        <span>Failed</span>
+
+                        <span class="metric-icon red">
+                            <svg viewBox="0 0 24 24">
+                                <path d="m8 8 8 8M16 8l-8 8"/>
+                            </svg>
+                        </span>
+                    </div>
+
+                    <div class="metric-value">18</div>
+
+                    <div class="metric-footer">
+                        <span class="negative">↓ 4.8%</span>
+                        <span>from last period</span>
+                    </div>
+
+                </article>
+
+                <article class="metric-card">
+
+                    <div class="metric-header">
+                        <span>Avg. delivery</span>
+
+                        <span class="metric-icon purple">
+                            <svg viewBox="0 0 24 24">
+                                <circle cx="12" cy="12" r="8"/>
+                                <path d="M12 8v5l3 2"/>
+                            </svg>
+                        </span>
+                    </div>
+
+                    <div class="metric-value">1.24<span class="metric-unit">s</span></div>
+
+                    <div class="metric-footer">
+                        <span class="positive">↓ 18ms</span>
+                        <span>faster than before</span>
+                    </div>
+
+                </article>
+
+            </section>
+
+            <section class="main-grid">
+
+                <article class="panel volume-panel">
+
+                    <div class="panel-header">
+
+                        <div>
+                            <h2>Email volume</h2>
+                            <p>Messages processed over the last 30 days</p>
+                        </div>
+
+                        <button class="small-select">
+                            Daily
+                            <span>⌄</span>
+                        </button>
+
+                    </div>
+
+                    <div class="chart-summary">
+
+                        <div>
+                            <strong>2,481</strong>
+                            <span>Total emails</span>
+                        </div>
+
+                        <div>
+                            <strong>82.7</strong>
+                            <span>Average / day</span>
+                        </div>
+
+                    </div>
+
+                    <div class="line-chart">
+
+                        <svg viewBox="0 0 900 290" preserveAspectRatio="none">
+
+                            <line x1="0" y1="50" x2="900" y2="50" class="grid-line"/>
+                            <line x1="0" y1="105" x2="900" y2="105" class="grid-line"/>
+                            <line x1="0" y1="160" x2="900" y2="160" class="grid-line"/>
+                            <line x1="0" y1="215" x2="900" y2="215" class="grid-line"/>
+                            <line x1="0" y1="270" x2="900" y2="270" class="grid-line"/>
+
+                            <path
+                                d="M0 235
+                                C25 228 45 238 70 218
+                                C95 198 115 212 140 201
+                                C165 190 185 207 210 185
+                                C235 164 255 176 280 155
+                                C305 135 325 152 350 142
+                                C375 130 395 145 420 125
+                                C445 106 465 119 490 110
+                                C515 99 535 115 560 92
+                                C585 70 605 94 630 82
+                                C655 69 675 84 700 65
+                                C725 48 745 61 770 52
+                                C795 43 815 59 840 44
+                                C865 32 882 40 900 28"
+                                class="chart-line"
+                            />
+
+                            <path
+                                d="M0 235
+                                C25 228 45 238 70 218
+                                C95 198 115 212 140 201
+                                C165 190 185 207 210 185
+                                C235 164 255 176 280 155
+                                C305 135 325 152 350 142
+                                C375 130 395 145 420 125
+                                C445 106 465 119 490 110
+                                C515 99 535 115 560 92
+                                C585 70 605 94 630 82
+                                C655 69 675 84 700 65
+                                C725 48 745 61 770 52
+                                C795 43 815 59 840 44
+                                C865 32 882 40 900 28
+                                L900 290
+                                L0 290 Z"
+                                class="chart-area"
+                            />
+
+                            <circle cx="700" cy="65" r="5" class="chart-point"/>
+                            <circle cx="840" cy="44" r="5" class="chart-point"/>
+
+                        </svg>
+
+                        <div class="chart-labels">
+                            <span>Sep 9</span>
+                            <span>Sep 14</span>
+                            <span>Sep 19</span>
+                            <span>Sep 24</span>
+                            <span>Sep 29</span>
+                            <span>Oct 4</span>
+                            <span>Oct 8</span>
+                        </div>
+
+                    </div>
+
+                </article>
+
+                <article class="panel status-panel">
+
+                    <div class="panel-header">
+                        <div>
+                            <h2>Delivery status</h2>
+                            <p>Current message distribution</p>
+                        </div>
+
+                        <a href="logs.html" class="panel-link">
+                            View logs →
+                        </a>
+                    </div>
+
+                    <div class="donut-wrapper">
+
+                        <div class="donut">
+                            <div class="donut-center">
+                                <strong>98.5%</strong>
+                                <span>Delivered</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="status-list">
+
+                        <div class="status-row">
+                            <div>
+                                <span class="status-color delivered"></span>
+                                Delivered
+                            </div>
+                            <strong>2,443</strong>
+                            <span>98.5%</span>
+                        </div>
+
+                        <div class="status-row">
+                            <div>
+                                <span class="status-color processing"></span>
+                                Processing
+                            </div>
+                            <strong>20</strong>
+                            <span>0.8%</span>
+                        </div>
+
+                        <div class="status-row">
+                            <div>
+                                <span class="status-color failed"></span>
+                                Failed
+                            </div>
+                            <strong>18</strong>
+                            <span>0.7%</span>
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </section>
+
+            <section class="secondary-grid">
+
+                <article class="panel">
+
+                    <div class="panel-header">
+
+                        <div>
+                            <h2>Delivery performance</h2>
+                            <p>Delivered vs failed messages</p>
+                        </div>
+
+                        <span class="period-label">30 days</span>
+
+                    </div>
+
+                    <div class="performance-chart">
+
+                        <div class="y-axis">
+                            <span>100%</span>
+                            <span>75%</span>
+                            <span>50%</span>
+                            <span>25%</span>
+                            <span>0%</span>
+                        </div>
+
+                        <div class="bars">
+
+                            <div class="bar-group">
+                                <div class="bar delivered-bar" style="height: 82%"></div>
+                                <div class="bar failed-bar" style="height: 3%"></div>
+                                <span>Sep 9</span>
+                            </div>
+
+                            <div class="bar-group">
+                                <div class="bar delivered-bar" style="height: 76%"></div>
+                                <div class="bar failed-bar" style="height: 4%"></div>
+                                <span>Sep 14</span>
+                            </div>
+
+                            <div class="bar-group">
+                                <div class="bar delivered-bar" style="height: 84%"></div>
+                                <div class="bar failed-bar" style="height: 2%"></div>
+                                <span>Sep 19</span>
+                            </div>
+
+                            <div class="bar-group">
+                                <div class="bar delivered-bar" style="height: 88%"></div>
+                                <div class="bar failed-bar" style="height: 3%"></div>
+                                <span>Sep 24</span>
+                            </div>
+
+                            <div class="bar-group">
+                                <div class="bar delivered-bar" style="height: 91%"></div>
+                                <div class="bar failed-bar" style="height: 2%"></div>
+                                <span>Sep 29</span>
+                            </div>
+
+                            <div class="bar-group">
+                                <div class="bar delivered-bar" style="height: 94%"></div>
+                                <div class="bar failed-bar" style="height: 2%"></div>
+                                <span>Oct 4</span>
+                            </div>
+
+                            <div class="bar-group">
+                                <div class="bar delivered-bar" style="height: 97%"></div>
+                                <div class="bar failed-bar" style="height: 1.5%"></div>
+                                <span>Oct 8</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="chart-legend">
+                        <span>
+                            <i class="legend-dot delivered"></i>
+                            Delivered
+                        </span>
+
+                        <span>
+                            <i class="legend-dot failed"></i>
+                            Failed
+                        </span>
+                    </div>
+
+                </article>
+
+                <article class="panel">
+
+                    <div class="panel-header">
+
+                        <div>
+                            <h2>Sending activity</h2>
+                            <p>Average emails by hour</p>
+                        </div>
+
+                        <span class="period-label">UTC+5:30</span>
+
+                    </div>
+
+                    <div class="activity-chart">
+
+                        <div class="activity-column">
+                            <span style="height: 24%"></span>
+                            <small>12am</small>
+                        </div>
+
+                        <div class="activity-column">
+                            <span style="height: 18%"></span>
+                            <small>2am</small>
+                        </div>
+
+                        <div class="activity-column">
+                            <span style="height: 14%"></span>
+                            <small>4am</small>
+                        </div>
+
+                        <div class="activity-column">
+                            <span style="height: 20%"></span>
+                            <small>6am</small>
+                        </div>
+
+                        <div class="activity-column">
+                            <span style="height: 45%"></span>
+                            <small>8am</small>
+                        </div>
+
+                        <div class="activity-column">
+                            <span style="height: 68%"></span>
+                            <small>10am</small>
+                        </div>
+
+                        <div class="activity-column">
+                            <span style="height: 91%"></span>
+                            <small>12pm</small>
+                        </div>
+
+                        <div class="activity-column">
+                            <span style="height: 78%"></span>
+                            <small>2pm</small>
+                        </div>
+
+                        <div class="activity-column">
+                            <span style="height: 64%"></span>
+                            <small>4pm</small>
+                        </div>
+
+                        <div class="activity-column">
+                            <span style="height: 82%"></span>
+                            <small>6pm</small>
+                        </div>
+
+                        <div class="activity-column">
+                            <span style="height: 56%"></span>
+                            <small>8pm</small>
+                        </div>
+
+                        <div class="activity-column">
+                            <span style="height: 32%"></span>
+                            <small>10pm</small>
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </section>
+
+            <section class="bottom-grid">
+
+                <article class="panel recent-panel">
+
+                    <div class="panel-header">
+
+                        <div>
+                            <h2>Recent emails</h2>
+                            <p>Latest messages sent through your API</p>
+                        </div>
+
+                        <a href="emails.html" class="panel-link">
+                            View all →
+                        </a>
+
+                    </div>
+
+                    <div class="table-wrapper">
+
+                        <table>
+
+                            <thead>
+                                <tr>
+                                    <th>Recipient</th>
+                                    <th>Subject</th>
+                                    <th>Status</th>
+                                    <th>Sent</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+
+                                <tr>
+                                    <td>
+                                        <div class="recipient">
+                                            <span class="recipient-avatar">AK</span>
+                                            <span>arif.khan@gmail.com</span>
+                                        </div>
+                                    </td>
+
+                                    <td>Welcome to Mail Service</td>
+
+                                    <td>
+                                        <span class="table-status delivered-status">
+                                            Delivered
+                                        </span>
+                                    </td>
+
+                                    <td>2 min ago</td>
+
+                                    <td>•••</td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <div class="recipient">
+                                            <span class="recipient-avatar">RS</span>
+                                            <span>rahul.sharma@gmail.com</span>
+                                        </div>
+                                    </td>
+
+                                    <td>Password reset request</td>
+
+                                    <td>
+                                        <span class="table-status delivered-status">
+                                            Delivered
+                                        </span>
+                                    </td>
+
+                                    <td>8 min ago</td>
+
+                                    <td>•••</td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <div class="recipient">
+                                            <span class="recipient-avatar">NF</span>
+                                            <span>nida.farooq@gmail.com</span>
+                                        </div>
+                                    </td>
+
+                                    <td>Verify your email address</td>
+
+                                    <td>
+                                        <span class="table-status processing-status">
+                                            Processing
+                                        </span>
+                                    </td>
+
+                                    <td>14 min ago</td>
+
+                                    <td>•••</td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <div class="recipient">
+                                            <span class="recipient-avatar">AM</span>
+                                            <span>ali.malik@gmail.com</span>
+                                        </div>
+                                    </td>
+
+                                    <td>Your account is ready</td>
+
+                                    <td>
+                                        <span class="table-status delivered-status">
+                                            Delivered
+                                        </span>
+                                    </td>
+
+                                    <td>22 min ago</td>
+
+                                    <td>•••</td>
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+                </article>
+
+                <article class="panel api-panel">
+
+                    <div class="panel-header">
+
+                        <div>
+                            <h2>API health</h2>
+                            <p>Last 24 hours</p>
+                        </div>
+
+                        <span class="health-badge">
+                            Operational
+                        </span>
+
+                    </div>
+
+                    <div class="health-main">
+                        <strong>99.98%</strong>
+                        <span>API uptime</span>
+                    </div>
+
+                    <div class="health-row">
+                        <span>Requests</span>
+                        <strong>4,821</strong>
+                    </div>
+
+                    <div class="health-row">
+                        <span>Success rate</span>
+                        <strong>99.7%</strong>
+                    </div>
+
+                    <div class="health-row">
+                        <span>Avg. response</span>
+                        <strong>82ms</strong>
+                    </div>
+
+                    <div class="health-line">
+
+                        <span class="health-segment"></span>
+                        <span class="health-segment"></span>
+                        <span class="health-segment"></span>
+                        <span class="health-segment"></span>
+                        <span class="health-segment"></span>
+                        <span class="health-segment"></span>
+                        <span class="health-segment"></span>
+                        <span class="health-segment"></span>
+                        <span class="health-segment"></span>
+                        <span class="health-segment"></span>
+                        <span class="health-segment"></span>
+                        <span class="health-segment"></span>
+
+                    </div>
+
+                    <a href="api.html" class="api-link">
+                        Manage API keys →
+                    </a>
+
+                </article>
+
+            </section>
+
+            <section class="last-grid">
+
+                <article class="panel">
+
+                    <div class="panel-header">
+
+                        <div>
+                            <h2>Top templates</h2>
+                            <p>Most frequently used templates</p>
+                        </div>
+
+                        <a href="templates.html" class="panel-link">
+                            Manage →
+                        </a>
+
+                    </div>
+
+                    <div class="template-list">
+
+                        <div class="template-item">
+                            <div class="template-icon">W</div>
+
+                            <div class="template-info">
+                                <strong>Welcome email</strong>
+                                <span>1,142 sends</span>
+                            </div>
+
+                            <span class="template-rate">98.9%</span>
+                        </div>
+
+                        <div class="template-item">
+                            <div class="template-icon">P</div>
+
+                            <div class="template-info">
+                                <strong>Password reset</strong>
+                                <span>624 sends</span>
+                            </div>
+
+                            <span class="template-rate">99.2%</span>
+                        </div>
+
+                        <div class="template-item">
+                            <div class="template-icon">V</div>
+
+                            <div class="template-info">
+                                <strong>Email verification</strong>
+                                <span>418 sends</span>
+                            </div>
+
+                            <span class="template-rate">98.4%</span>
+                        </div>
+
+                    </div>
+
+                </article>
+
+                <article class="panel">
+
+                    <div class="panel-header">
+
+                        <div>
+                            <h2>Recent failures</h2>
+                            <p>Messages requiring attention</p>
+                        </div>
+
+                        <a href="logs.html" class="panel-link">
+                            View all →
+                        </a>
+
+                    </div>
+
+                    <div class="failure-list">
+
+                        <div class="failure-item">
+
+                            <div class="failure-status">!</div>
+
+                            <div class="failure-info">
+                                <strong>Mailbox unavailable</strong>
+                                <span>user@example.com</span>
+                            </div>
+
+                            <span class="failure-time">12m</span>
+
+                        </div>
+
+                        <div class="failure-item">
+
+                            <div class="failure-status">!</div>
+
+                            <div class="failure-info">
+                                <strong>Invalid recipient</strong>
+                                <span>hello@invalid-domain</span>
+                            </div>
+
+                            <span class="failure-time">36m</span>
+
+                        </div>
+
+                        <div class="failure-item">
+
+                            <div class="failure-status">!</div>
+
+                            <div class="failure-info">
+                                <strong>Connection timeout</strong>
+                                <span>recipient@example.com</span>
+                            </div>
+
+                            <span class="failure-time">1h</span>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+                <article class="panel usage-panel">
+
+                    <div class="panel-header">
+
+                        <div>
+                            <h2>Plan usage</h2>
+                            <p>October 2026</p>
+                        </div>
+
+                        <a href="billing.html" class="panel-link">
+                            Upgrade →
+                        </a>
+
+                    </div>
+
+                    <div class="usage-number">
+                        <strong>2,481</strong>
+                        <span>/ 300</span>
+                    </div>
+
+                    <div class="usage-bar">
+                        <span></span>
+                    </div>
+
+                    <p class="usage-warning">
+                        You've exceeded the free monthly limit.
+                        Upgrade to continue sending.
+                    </p>
+
+                    <a href="billing.html" class="usage-button">
+                        View plans
+                    </a>
+
+                </article>
+
+            </section>
+
+        </div>
+
+    </main>
+
+</div>
+
+</body>
+</html>

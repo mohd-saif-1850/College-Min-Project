@@ -1,0 +1,1009 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentation — Mail Service</title>
+    <link rel="stylesheet" href="docs.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="nav-container">
+
+            <a href="index.html" class="brand">
+                <img src="images/logo.png" alt="Mail Service">
+                <span>Mail Service</span>
+            </a>
+
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="features.html">Features</a>
+                <a href="developers.html">Developers</a>
+                <a href="docs.html" class="active">Docs</a>
+                <a href="pricing.html">Pricing</a>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="dashboard.html" class="dashboard-btn">Dashboard</a>
+                <a href="login.html" class="login-link">Log in</a>
+                <a href="register.html" class="register-btn">Get started</a>
+            </div>
+
+        </div>
+    </header>
+
+
+    <div class="docs-layout">
+
+        <aside class="docs-sidebar">
+
+            <div class="sidebar-inner">
+
+                <div class="sidebar-heading">
+                    <span>DOCUMENTATION</span>
+                    <strong>v1</strong>
+                </div>
+
+
+                <div class="sidebar-group">
+
+                    <span class="group-title">Getting started</span>
+
+                    <a href="docs.html" class="sidebar-link active">
+                        Introduction
+                    </a>
+
+                    <a href="docs.html#quickstart" class="sidebar-link">
+                        Quickstart
+                    </a>
+
+                    <a href="docs.html#authentication" class="sidebar-link">
+                        Authentication
+                    </a>
+
+                </div>
+
+
+                <div class="sidebar-group">
+
+                    <span class="group-title">API</span>
+
+                    <a href="docs.html#our-api" class="sidebar-link">
+                        Our API
+                    </a>
+
+                    <a href="docs.html#send-email" class="sidebar-link">
+                        Send email
+                    </a>
+
+                    <a href="api.html" class="sidebar-link">
+                        API reference
+                    </a>
+
+                </div>
+
+
+                <div class="sidebar-group">
+
+                    <span class="group-title">Email</span>
+
+                    <a href="docs.html#templates" class="sidebar-link">
+                        Templates
+                    </a>
+
+                    <a href="docs.html#delivery" class="sidebar-link">
+                        Delivery
+                    </a>
+
+                    <a href="docs.html#errors" class="sidebar-link">
+                        Errors
+                    </a>
+
+                </div>
+
+
+                <div class="sidebar-group">
+
+                    <span class="group-title">Resources</span>
+
+                    <a href="developers.html" class="sidebar-link">
+                        Developers
+                    </a>
+
+                    <a href="dashboard.html" class="sidebar-link">
+                        Dashboard
+                    </a>
+
+                    <a href="status.html" class="sidebar-link">
+                        System status
+                    </a>
+
+                </div>
+
+
+                <div class="sidebar-bottom">
+
+                    <div class="sidebar-support">
+                        <span>Need help?</span>
+                        <a href="contact.html">Contact support →</a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </aside>
+
+
+        <main class="docs-content">
+
+            <div class="docs-main">
+
+                <div class="breadcrumbs">
+                    Documentation
+                    <span>/</span>
+                    Getting started
+                    <span>/</span>
+                    Introduction
+                </div>
+
+
+                <section class="doc-section introduction">
+
+                    <span class="doc-label">GETTING STARTED</span>
+
+                    <h1>
+                        Mail Service
+                        <span>Documentation</span>
+                    </h1>
+
+                    <p class="lead">
+                        Everything you need to integrate Mail Service into
+                        your application and start sending transactional
+                        emails through our API.
+                    </p>
+
+
+                    <div class="intro-note">
+
+                        <div class="note-icon">i</div>
+
+                        <div>
+                            <strong>Welcome to Mail Service.</strong>
+
+                            <p>
+                                This documentation covers authentication,
+                                sending emails, templates, delivery states,
+                                API responses, and common errors.
+                            </p>
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+                <section class="doc-section" id="quickstart">
+
+                    <div class="section-heading">
+
+                        <span class="section-number">01</span>
+
+                        <div>
+                            <span class="doc-label">QUICKSTART</span>
+
+                            <h2>
+                                Send your first email
+                            </h2>
+                        </div>
+
+                    </div>
+
+
+                    <p>
+                        Getting started with Mail Service only requires an
+                        account, an API key, and a request to our email
+                        endpoint.
+                    </p>
+
+
+                    <div class="steps">
+
+                        <div class="step">
+
+                            <div class="step-number">
+                                1
+                            </div>
+
+                            <div>
+                                <h3>Create an account</h3>
+
+                                <p>
+                                    Create your Mail Service account and open
+                                    your dashboard.
+                                </p>
+
+                                <a href="register.html">
+                                    Create account →
+                                </a>
+                            </div>
+
+                        </div>
+
+
+                        <div class="step">
+
+                            <div class="step-number">
+                                2
+                            </div>
+
+                            <div>
+                                <h3>Create an API key</h3>
+
+                                <p>
+                                    Generate an API key from your project
+                                    dashboard.
+                                </p>
+
+                                <a href="dashboard.html">
+                                    Open dashboard →
+                                </a>
+                            </div>
+
+                        </div>
+
+
+                        <div class="step">
+
+                            <div class="step-number">
+                                3
+                            </div>
+
+                            <div>
+                                <h3>Send your request</h3>
+
+                                <p>
+                                    Use your API key to authenticate a request
+                                    to the Mail Service API.
+                                </p>
+
+                                <a href="#send-email">
+                                    View request →
+                                </a>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+                <section class="doc-section" id="authentication">
+
+                    <div class="section-heading">
+
+                        <span class="section-number">02</span>
+
+                        <div>
+                            <span class="doc-label">AUTHENTICATION</span>
+
+                            <h2>
+                                Authenticate your requests
+                            </h2>
+
+                        </div>
+
+                    </div>
+
+
+                    <p>
+                        Every API request must include a valid Mail Service
+                        API key. API keys identify your project and authorize
+                        requests to the service.
+                    </p>
+
+
+                    <div class="code-block">
+
+                        <div class="code-header">
+
+                            <div class="code-title">
+                                Authorization
+                            </div>
+
+                            <span class="copy-label">
+                                Copy
+                            </span>
+
+                        </div>
+
+
+                        <pre><code>Authorization: Bearer YOUR_API_KEY</code></pre>
+
+                    </div>
+
+
+                    <div class="warning-note">
+
+                        <strong>Keep your API key private.</strong>
+
+                        <p>
+                            Never expose your API key in client-side code,
+                            public repositories, browser applications, or
+                            frontend JavaScript.
+                        </p>
+
+                    </div>
+
+                </section>
+
+
+                <section class="doc-section" id="our-api">
+
+                    <div class="section-heading">
+
+                        <span class="section-number">03</span>
+
+                        <div>
+                            <span class="doc-label">OUR API</span>
+
+                            <h2>
+                                Your Mail Service API
+                            </h2>
+
+                        </div>
+
+                    </div>
+
+
+                    <p>
+                        The Mail Service API provides a simple HTTP interface
+                        for sending emails from your application.
+                    </p>
+
+
+                    <div class="api-endpoint">
+
+                        <div class="endpoint-method">
+                            POST
+                        </div>
+
+                        <div class="endpoint-url">
+                            https://mailservice.com/send-emails/YOUR_API_KEY
+                        </div>
+
+                        <div class="endpoint-copy">
+                            Copy
+                        </div>
+
+                    </div>
+
+
+                    <div class="endpoint-description">
+
+                        <strong>Base endpoint</strong>
+
+                        <p>
+                            Replace <code>YOUR_API_KEY</code> with the API key
+                            associated with your Mail Service project.
+                        </p>
+
+                    </div>
+
+
+                    <div class="api-details-grid">
+
+                        <div class="api-detail">
+
+                            <span>Method</span>
+
+                            <strong>POST</strong>
+
+                        </div>
+
+
+                        <div class="api-detail">
+
+                            <span>Authentication</span>
+
+                            <strong>API Key</strong>
+
+                        </div>
+
+
+                        <div class="api-detail">
+
+                            <span>Content-Type</span>
+
+                            <strong>application/json</strong>
+
+                        </div>
+
+
+                        <div class="api-detail">
+
+                            <span>Response</span>
+
+                            <strong>JSON</strong>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+                <section class="doc-section" id="send-email">
+
+                    <div class="section-heading">
+
+                        <span class="section-number">04</span>
+
+                        <div>
+                            <span class="doc-label">SEND EMAIL</span>
+
+                            <h2>
+                                Send an email
+                            </h2>
+
+                        </div>
+
+                    </div>
+
+
+                    <p>
+                        Make a POST request to the Mail Service endpoint with
+                        the recipient, subject, and content of your message.
+                    </p>
+
+
+                    <div class="code-block">
+
+                        <div class="code-header">
+
+                            <div class="code-title">
+                                Request
+                            </div>
+
+                            <span class="language">
+                                JavaScript
+                            </span>
+
+                        </div>
+
+
+                        <pre><code><span class="keyword">const</span> response = <span class="keyword">await</span> fetch(
+    <span class="string">"https://mailservice.com/send-emails/YOUR_API_KEY"</span>,
+    {
+        method: <span class="string">"POST"</span>,
+        headers: {
+            <span class="string">"Content-Type"</span>: <span class="string">"application/json"</span>
+        },
+        body: JSON.stringify({
+            to: <span class="string">"user@example.com"</span>,
+            subject: <span class="string">"Welcome to Mail Service"</span>,
+            text: <span class="string">"Thanks for joining us."</span>
+        })
+    }
+);</code></pre>
+
+                    </div>
+
+
+                    <h3 class="subheading">
+                        Request body
+                    </h3>
+
+
+                    <div class="parameter-table">
+
+                        <div class="parameter-row table-header">
+
+                            <span>Parameter</span>
+                            <span>Type</span>
+                            <span>Required</span>
+                            <span>Description</span>
+
+                        </div>
+
+
+                        <div class="parameter-row">
+
+                            <strong>to</strong>
+
+                            <span>string</span>
+
+                            <span class="required">Yes</span>
+
+                            <span>
+                                Recipient email address.
+                            </span>
+
+                        </div>
+
+
+                        <div class="parameter-row">
+
+                            <strong>subject</strong>
+
+                            <span>string</span>
+
+                            <span class="required">Yes</span>
+
+                            <span>
+                                Subject of the email.
+                            </span>
+
+                        </div>
+
+
+                        <div class="parameter-row">
+
+                            <strong>text</strong>
+
+                            <span>string</span>
+
+                            <span class="required">Yes</span>
+
+                            <span>
+                                Plain-text email content.
+                            </span>
+
+                        </div>
+
+
+                        <div class="parameter-row">
+
+                            <strong>html</strong>
+
+                            <span>string</span>
+
+                            <span class="optional">No</span>
+
+                            <span>
+                                HTML version of the email.
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <h3 class="subheading">
+                        Response
+                    </h3>
+
+
+                    <div class="code-block response-block">
+
+                        <div class="code-header">
+
+                            <div class="code-title">
+                                202 Accepted
+                            </div>
+
+                            <span class="language">
+                                JSON
+                            </span>
+
+                        </div>
+
+
+                        <pre><code>{
+    <span class="property">"success"</span>: <span class="boolean">true</span>,
+    <span class="property">"messageId"</span>: <span class="string">"msg_8f92a1"</span>,
+    <span class="property">"status"</span>: <span class="string">"accepted"</span>
+}</code></pre>
+
+                    </div>
+
+                </section>
+
+
+                <section class="doc-section" id="templates">
+
+                    <div class="section-heading">
+
+                        <span class="section-number">05</span>
+
+                        <div>
+                            <span class="doc-label">TEMPLATES</span>
+
+                            <h2>
+                                Email templates
+                            </h2>
+
+                        </div>
+
+                    </div>
+
+
+                    <p>
+                        Templates allow you to keep email content separate
+                        from your application's business logic.
+                    </p>
+
+
+                    <div class="template-doc">
+
+                        <div class="template-info">
+
+                            <span class="template-badge">
+                                TEMPLATE
+                            </span>
+
+                            <h3>
+                                Account verification
+                            </h3>
+
+                            <p>
+                                A reusable message for verifying new user
+                                accounts.
+                            </p>
+
+                            <a href="dashboard.html">
+                                Manage templates →
+                            </a>
+
+                        </div>
+
+
+                        <div class="template-preview">
+
+                            <div class="email-top">
+
+                                <div class="email-logo">
+                                    MS
+                                </div>
+
+                                <div>
+                                    <strong>Mail Service</strong>
+                                    <span>Account verification</span>
+                                </div>
+
+                            </div>
+
+
+                            <div class="email-body">
+
+                                <h4>
+                                    Verify your account
+                                </h4>
+
+                                <p>
+                                    Welcome! Please verify your email address
+                                    to continue using your account.
+                                </p>
+
+                                <button>
+                                    Verify account
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+                <section class="doc-section" id="delivery">
+
+                    <div class="section-heading">
+
+                        <span class="section-number">06</span>
+
+                        <div>
+                            <span class="doc-label">DELIVERY</span>
+
+                            <h2>
+                                Understand delivery states
+                            </h2>
+
+                        </div>
+
+                    </div>
+
+
+                    <p>
+                        Every email moves through a delivery lifecycle.
+                        Use these states to understand what happened to
+                        your messages.
+                    </p>
+
+
+                    <div class="status-list">
+
+                        <div class="status-row">
+
+                            <div class="status-icon accepted">
+                                ✓
+                            </div>
+
+                            <div>
+                                <strong>Accepted</strong>
+                                <p>
+                                    Mail Service accepted the request for processing.
+                                </p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="status-row">
+
+                            <div class="status-icon processing">
+                                •
+                            </div>
+
+                            <div>
+                                <strong>Processing</strong>
+                                <p>
+                                    The message is currently being processed.
+                                </p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="status-row">
+
+                            <div class="status-icon delivered">
+                                ✓
+                            </div>
+
+                            <div>
+                                <strong>Delivered</strong>
+                                <p>
+                                    The message was successfully delivered.
+                                </p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="status-row">
+
+                            <div class="status-icon failed">
+                                !
+                            </div>
+
+                            <div>
+                                <strong>Failed</strong>
+                                <p>
+                                    Delivery could not be completed.
+                                </p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+                <section class="doc-section" id="errors">
+
+                    <div class="section-heading">
+
+                        <span class="section-number">07</span>
+
+                        <div>
+                            <span class="doc-label">ERRORS</span>
+
+                            <h2>
+                                API errors
+                            </h2>
+
+                        </div>
+
+                    </div>
+
+
+                    <p>
+                        When a request cannot be processed, the API returns
+                        a structured JSON response with an appropriate HTTP
+                        status code.
+                    </p>
+
+
+                    <div class="error-table">
+
+                        <div class="error-row error-header">
+
+                            <span>Status</span>
+                            <span>Meaning</span>
+                            <span>Action</span>
+
+                        </div>
+
+
+                        <div class="error-row">
+
+                            <strong>400</strong>
+
+                            <span>Invalid request</span>
+
+                            <p>
+                                Check the request body and parameters.
+                            </p>
+
+                        </div>
+
+
+                        <div class="error-row">
+
+                            <strong>401</strong>
+
+                            <span>Unauthorized</span>
+
+                            <p>
+                                Check your API key.
+                            </p>
+
+                        </div>
+
+
+                        <div class="error-row">
+
+                            <strong>403</strong>
+
+                            <span>Forbidden</span>
+
+                            <p>
+                                Verify your project permissions.
+                            </p>
+
+                        </div>
+
+
+                        <div class="error-row">
+
+                            <strong>429</strong>
+
+                            <span>Rate limited</span>
+
+                            <p>
+                                Slow down requests and retry later.
+                            </p>
+
+                        </div>
+
+
+                        <div class="error-row">
+
+                            <strong>500</strong>
+
+                            <span>Server error</span>
+
+                            <p>
+                                Retry the request or check system status.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+                <section class="next-section">
+
+                    <div>
+
+                        <span class="doc-label">
+                            NEXT
+                        </span>
+
+                        <h2>
+                            Ready to start?
+                        </h2>
+
+                        <p>
+                            Create your account and get your first API key.
+                        </p>
+
+                    </div>
+
+                    <a href="register.html" class="primary-btn">
+                        Get started
+                        <span>→</span>
+                    </a>
+
+                </section>
+
+            </div>
+
+
+            <aside class="docs-rightbar">
+
+                <div class="rightbar-inner">
+
+                    <span class="rightbar-title">
+                        ON THIS PAGE
+                    </span>
+
+                    <a href="#quickstart">Quickstart</a>
+                    <a href="#authentication">Authentication</a>
+                    <a href="#our-api">Our API</a>
+                    <a href="#send-email">Send email</a>
+                    <a href="#templates">Templates</a>
+                    <a href="#delivery">Delivery</a>
+                    <a href="#errors">Errors</a>
+
+                </div>
+
+            </aside>
+
+        </main>
+
+    </div>
+
+
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <div class="footer-brand">
+
+                <a href="index.html" class="brand">
+                    <img src="images/logo.png" alt="Mail Service">
+                    <span>Mail Service</span>
+                </a>
+
+                <p>
+                    Reliable email delivery for modern applications.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <div>
+                    <strong>Product</strong>
+                    <a href="features.html">Features</a>
+                    <a href="developers.html">Developers</a>
+                    <a href="pricing.html">Pricing</a>
+                    <a href="dashboard.html">Dashboard</a>
+                </div>
+
+
+                <div>
+                    <strong>Resources</strong>
+                    <a href="docs.html">Documentation</a>
+                    <a href="api.html">API Reference</a>
+                    <a href="status.html">Status</a>
+                </div>
+
+
+                <div>
+                    <strong>Company</strong>
+                    <a href="about.html">About</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="privacy.html">Privacy</a>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <span>© 2026 Mail Service. All rights reserved.</span>
+
+            <div>
+                <a href="privacy.html">Privacy</a>
+                <a href="terms.html">Terms</a>
+            </div>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billing - Mail Service</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="billing.css">
+</head>
+<body>
+
+    <aside class="sidebar">
+        <div class="sidebar-top">
+            <a href="dashboard.html" class="sidebar-brand">
+                <img src="images/logo.png" alt="Mail Service">
+                <span>Mail Service</span>
+            </a>
+
+            <div class="workspace">
+                <div class="workspace-icon">M</div>
+                <div class="workspace-info">
+                    <span class="workspace-label">Workspace</span>
+                    <strong>My Workspace</strong>
+                </div>
+                <span class="workspace-arrow">⌄</span>
+            </div>
+        </div>
+
+        <nav class="sidebar-nav">
+            <div class="nav-section">
+                <span class="nav-section-title">Workspace</span>
+
+                <a href="dashboard.html" class="nav-item">
+                    <span class="nav-icon">
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <path d="M4 13h6V4H4v9ZM4 20h6v-4H4v4ZM14 20h6v-9h-6v9ZM14 11h6V4h-6v7Z" stroke="currentColor" stroke-width="1.7"/>
+                        </svg>
+                    </span>
+                    Overview
+                </a>
+
+                <a href="emails.html" class="nav-item">
+                    <span class="nav-icon">
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <path d="M4 6.5h16v11H4v-11Z" stroke="currentColor" stroke-width="1.7"/>
+                            <path d="m4.5 7 7.5 6 7.5-6" stroke="currentColor" stroke-width="1.7"/>
+                        </svg>
+                    </span>
+                    Emails
+                </a>
+
+                <a href="templates.html" class="nav-item">
+                    <span class="nav-icon">
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <path d="M5 4.5h14v15H5v-15Z" stroke="currentColor" stroke-width="1.7"/>
+                            <path d="M8 8h8M8 11.5h8M8 15h5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+                        </svg>
+                    </span>
+                    Templates
+                </a>
+            </div>
+
+            <div class="nav-section">
+                <span class="nav-section-title">Infrastructure</span>
+
+                <a href="api.html" class="nav-item">
+                    <span class="nav-icon">
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <path d="M8 5 4 9l4 4M16 5l4 4-4 4M14 3l-4 18" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </span>
+                    API keys
+                </a>
+
+                <a href="logs.html" class="nav-item">
+                    <span class="nav-icon">
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <path d="M5 4.5h14v15H5v-15Z" stroke="currentColor" stroke-width="1.7"/>
+                            <path d="M8 8h8M8 11.5h5M8 15h7" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+                        </svg>
+                    </span>
+                    Delivery logs
+                </a>
+
+                <a href="webhooks.html" class="nav-item">
+                    <span class="nav-icon">
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <path d="M8 17h8M7 7h10M12 7v10M7 7a3 3 0 1 0 0 6h2M17 17a3 3 0 1 1 0-6h-2" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+                        </svg>
+                    </span>
+                    Webhooks
+                </a>
+            </div>
+
+            <div class="nav-section">
+                <span class="nav-section-title">Account</span>
+
+                <a href="settings.html" class="nav-item">
+                    <span class="nav-icon">
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <circle cx="12" cy="12" r="3.2" stroke="currentColor" stroke-width="1.7"/>
+                            <path d="M19 13.5v-3l-2-.7a6.4 6.4 0 0 0-.7-1.6l.9-1.9-2.1-2.1-1.9.9a6.4 6.4 0 0 0-1.6-.7L11 2.5H8l-.7 1.9a6.4 6.4 0 0 0-1.6.7l-1.9-.9-2.1 2.1.9 1.9a6.4 6.4 0 0 0-.7 1.6l-2 .7v3l2 .7c.2.6.4 1.1.7 1.6l-.9 1.9 2.1 2.1 1.9-.9c.5.3 1 .5 1.6.7l.7 2h3l.7-2c.6-.2 1.1-.4 1.6-.7l1.9.9 2.1-2.1-.9-1.9c.3-.5.5-1 .7-1.6l2-.7Z" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/>
+                        </svg>
+                    </span>
+                    Settings
+                </a>
+
+                <a href="billing.html" class="nav-item active">
+                    <span class="nav-icon">
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <rect x="3.5" y="5.5" width="17" height="13" rx="2" stroke="currentColor" stroke-width="1.7"/>
+                            <path d="M3.5 9h17M7 14h3" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+                        </svg>
+                    </span>
+                    Billing
+                </a>
+            </div>
+        </nav>
+
+        <div class="sidebar-bottom">
+            <div class="help-card">
+                <div class="help-icon">
+                    <svg viewBox="0 0 24 24" fill="none">
+                        <circle cx="12" cy="12" r="8.5" stroke="currentColor" stroke-width="1.7"/>
+                        <path d="M9.8 9.2a2.4 2.4 0 1 1 4.1 1.7c-.9.8-1.9 1.2-1.9 2.5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+                        <circle cx="12" cy="16.5" r=".8" fill="currentColor"/>
+                    </svg>
+                </div>
+                <div>
+                    <strong>Need help?</strong>
+                    <span>Read the documentation</span>
+                </div>
+            </div>
+
+            <div class="user-profile">
+                <div class="user-avatar">MS</div>
+                <div class="user-info">
+                    <strong>Mohd Saif</strong>
+                    <span>Free plan</span>
+                </div>
+                <span class="user-more">•••</span>
+            </div>
+        </div>
+    </aside>
+
+    <main class="main-content">
+
+        <header class="topbar">
+            <div class="system-status">
+                <span class="status-dot"></span>
+                All systems operational
+            </div>
+
+            <div class="topbar-actions">
+                <button class="icon-button">
+                    <svg viewBox="0 0 24 24" fill="none">
+                        <path d="M18 9a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9ZM10 21h4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+                    </svg>
+                    <span class="notification-dot"></span>
+                </button>
+                <div class="top-avatar">MS</div>
+            </div>
+        </header>
+
+        <div class="page-content">
+
+            <div class="page-header">
+                <div>
+                    <span class="page-kicker">Account</span>
+                    <h1>Billing</h1>
+                    <p>Manage your plan, usage, payment method, and invoices.</p>
+                </div>
+
+                <a href="pricing.html" class="secondary-btn">
+                    Compare plans
+                </a>
+            </div>
+
+            <section class="billing-grid">
+
+                <div class="current-plan-card">
+                    <div class="plan-header">
+                        <div>
+                            <span class="plan-label">Current plan</span>
+                            <h2>Free</h2>
+                            <p>For personal projects and early development.</p>
+                        </div>
+
+                        <span class="current-badge">
+                            <i></i>
+                            Current plan
+                        </span>
+                    </div>
+
+                    <div class="plan-price">
+                        <strong>$0</strong>
+                        <span>/ month</span>
+                    </div>
+
+                    <div class="usage-summary">
+                        <div class="usage-heading">
+                            <span>Email usage</span>
+                            <strong>248 / 300</strong>
+                        </div>
+
+                        <div class="usage-track">
+                            <span style="width: 82.7%"></span>
+                        </div>
+
+                        <div class="usage-footer">
+                            <span>248 emails sent</span>
+                            <span>52 remaining</span>
+                        </div>
+                    </div>
+
+                    <div class="plan-features">
+                        <div>
+                            <i>✓</i>
+                            300 emails per month
+                        </div>
+                        <div>
+                            <i>✓</i>
+                            1 API key
+                        </div>
+                        <div>
+                            <i>✓</i>
+                            Delivery logs
+                        </div>
+                        <div>
+                            <i>✓</i>
+                            Basic templates
+                        </div>
+                    </div>
+
+                    <a href="pricing.html" class="upgrade-btn">
+                        Upgrade plan
+                    </a>
+                </div>
+
+                <div class="billing-summary-card">
+                    <div class="card-heading">
+                        <div>
+                            <h2>Usage this month</h2>
+                            <span>October 1 – October 31, 2026</span>
+                        </div>
+
+                        <span class="period-badge">Monthly</span>
+                    </div>
+
+                    <div class="usage-list">
+
+                        <div class="usage-item">
+                            <div class="usage-item-top">
+                                <div>
+                                    <strong>Emails</strong>
+                                    <span>Transactional emails sent</span>
+                                </div>
+                                <strong>248 / 300</strong>
+                            </div>
+
+                            <div class="mini-progress">
+                                <span style="width: 82.7%"></span>
+                            </div>
+                        </div>
+
+                        <div class="usage-item">
+                            <div class="usage-item-top">
+                                <div>
+                                    <strong>API requests</strong>
+                                    <span>Requests made this month</span>
+                                </div>
+                                <strong>1,842</strong>
+                            </div>
+
+                            <div class="mini-progress">
+                                <span style="width: 36%"></span>
+                            </div>
+                        </div>
+
+                        <div class="usage-item">
+                            <div class="usage-item-top">
+                                <div>
+                                    <strong>Templates</strong>
+                                    <span>Templates stored</span>
+                                </div>
+                                <strong>18 / 25</strong>
+                            </div>
+
+                            <div class="mini-progress">
+                                <span style="width: 72%"></span>
+                            </div>
+                        </div>
+
+                        <div class="usage-item">
+                            <div class="usage-item-top">
+                                <div>
+                                    <strong>API keys</strong>
+                                    <span>Active keys</span>
+                                </div>
+                                <strong>1 / 1</strong>
+                            </div>
+
+                            <div class="mini-progress">
+                                <span style="width: 100%"></span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="section">
+
+                <div class="section-heading">
+                    <div>
+                        <h2>Plans</h2>
+                        <p>Choose the plan that fits your sending volume.</p>
+                    </div>
+                </div>
+
+                <div class="plans-grid">
+
+                    <div class="plan-card">
+                        <div class="plan-card-top">
+                            <div>
+                                <span class="small-label">Starter</span>
+                                <h3>Free</h3>
+                            </div>
+                            <span class="plan-current">Current</span>
+                        </div>
+
+                        <div class="price">
+                            <strong>$0</strong>
+                            <span>/month</span>
+                        </div>
+
+                        <p>Everything you need to start sending transactional email.</p>
+
+                        <div class="plan-list">
+                            <span>✓ 300 emails/month</span>
+                            <span>✓ 1 API key</span>
+                            <span>✓ Delivery logs</span>
+                            <span>✓ Basic templates</span>
+                            <span>✓ Delivery tracking</span>
+                        </div>
+
+                        <button class="plan-button disabled">Current plan</button>
+                    </div>
+
+                    <div class="plan-card featured">
+                        <div class="recommended">Recommended</div>
+
+                        <div class="plan-card-top">
+                            <div>
+                                <span class="small-label">For growing apps</span>
+                                <h3>Pro</h3>
+                            </div>
+                        </div>
+
+                        <div class="price">
+                            <strong>$9</strong>
+                            <span>/month</span>
+                        </div>
+
+                        <p>More volume, advanced controls, and higher limits.</p>
+
+                        <div class="plan-list">
+                            <span>✓ 10,000 emails/month</span>
+                            <span>✓ 10 API keys</span>
+                            <span>✓ Advanced logs</span>
+                            <span>✓ Reusable templates</span>
+                            <span>✓ Automatic retries</span>
+                            <span>✓ Priority support</span>
+                        </div>
+
+                        <button class="plan-button primary">Upgrade to Pro</button>
+                    </div>
+
+                    <div class="plan-card">
+                        <div class="plan-card-top">
+                            <div>
+                                <span class="small-label">For production</span>
+                                <h3>Business</h3>
+                            </div>
+                        </div>
+
+                        <div class="price">
+                            <strong>$39</strong>
+                            <span>/month</span>
+                        </div>
+
+                        <p>High-volume infrastructure for production applications.</p>
+
+                        <div class="plan-list">
+                            <span>✓ 100,000 emails/month</span>
+                            <span>✓ Unlimited API keys</span>
+                            <span>✓ Dedicated infrastructure</span>
+                            <span>✓ Advanced analytics</span>
+                            <span>✓ Higher rate limits</span>
+                            <span>✓ Priority support</span>
+                        </div>
+
+                        <button class="plan-button">Upgrade to Business</button>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="section">
+
+                <div class="section-heading">
+                    <div>
+                        <h2>Payment method</h2>
+                        <p>Your default payment method for paid subscriptions.</p>
+                    </div>
+                </div>
+
+                <div class="payment-card">
+
+                    <div class="payment-method">
+                        <div class="card-brand">VISA</div>
+
+                        <div class="card-details">
+                            <strong>•••• •••• •••• 4242</strong>
+                            <span>Expires 08/29</span>
+                        </div>
+                    </div>
+
+                    <span class="default-badge">Default</span>
+
+                    <button class="secondary-btn">Edit</button>
+                </div>
+
+                <button class="add-payment">
+                    <span>+</span>
+                    Add payment method
+                </button>
+
+            </section>
+
+            <section class="section">
+
+                <div class="section-heading">
+                    <div>
+                        <h2>Billing history</h2>
+                        <p>Download invoices and view previous payments.</p>
+                    </div>
+                </div>
+
+                <div class="invoice-card">
+
+                    <div class="invoice-head">
+                        <span>Invoice</span>
+                        <span>Date</span>
+                        <span>Amount</span>
+                        <span>Status</span>
+                        <span></span>
+                    </div>
+
+                    <div class="invoice-row">
+                        <div class="invoice-name">
+                            <div class="invoice-icon">
+                                <svg viewBox="0 0 24 24" fill="none">
+                                    <path d="M6 4h12v16l-3-2-3 2-3-2-3 2V4Z" stroke="currentColor" stroke-width="1.7"/>
+                                    <path d="M9 8h6M9 11h6M9 14h4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <strong>INV-2026-009</strong>
+                                <span>Pro plan</span>
+                            </div>
+                        </div>
+
+                        <span>Oct 01, 2026</span>
+                        <strong>$9.00</strong>
+
+                        <span class="paid-badge">
+                            <i></i>
+                            Paid
+                        </span>
+
+                        <button class="download-btn">Download</button>
+                    </div>
+
+                    <div class="invoice-row">
+                        <div class="invoice-name">
+                            <div class="invoice-icon">
+                                <svg viewBox="0 0 24 24" fill="none">
+                                    <path d="M6 4h12v16l-3-2-3 2-3-2-3 2V4Z" stroke="currentColor" stroke-width="1.7"/>
+                                    <path d="M9 8h6M9 11h6M9 14h4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <strong>INV-2026-008</strong>
+                                <span>Pro plan</span>
+                            </div>
+                        </div>
+
+                        <span>Sep 01, 2026</span>
+                        <strong>$9.00</strong>
+
+                        <span class="paid-badge">
+                            <i></i>
+                            Paid
+                        </span>
+
+                        <button class="download-btn">Download</button>
+                    </div>
+
+                    <div class="invoice-row">
+                        <div class="invoice-name">
+                            <div class="invoice-icon">
+                                <svg viewBox="0 0 24 24" fill="none">
+                                    <path d="M6 4h12v16l-3-2-3 2-3-2-3 2V4Z" stroke="currentColor" stroke-width="1.7"/>
+                                    <path d="M9 8h6M9 11h6M9 14h4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <strong>INV-2026-007</strong>
+                                <span>Pro plan</span>
+                            </div>
+                        </div>
+
+                        <span>Aug 01, 2026</span>
+                        <strong>$9.00</strong>
+
+                        <span class="paid-badge">
+                            <i></i>
+                            Paid
+                        </span>
+
+                        <button class="download-btn">Download</button>
+                    </div>
+
+                    <div class="invoice-footer">
+                        <span>Showing 3 of 3 invoices</span>
+                        <a href="#">View all invoices →</a>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section class="section">
+
+                <div class="section-heading">
+                    <div>
+                        <h2>Billing information</h2>
+                        <p>Information displayed on your invoices.</p>
+                    </div>
+                </div>
+
+                <div class="billing-info-card">
+
+                    <div class="form-grid">
+
+                        <div class="form-group">
+                            <label>Company or name</label>
+                            <input type="text" value="Mohd Saif">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Billing email</label>
+                            <input type="email" value="billing@example.com">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Country</label>
+                            <select>
+                                <option>India</option>
+                                <option>United States</option>
+                                <option>United Kingdom</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Postal code</label>
+                            <input type="text" value="110025">
+                        </div>
+
+                        <div class="form-group full">
+                            <label>Billing address</label>
+                            <input type="text" value="New Delhi, India">
+                        </div>
+
+                    </div>
+
+                    <div class="card-footer">
+                        <span>Used for future invoices.</span>
+                        <button class="primary-btn">Save billing information</button>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section class="cancel-section">
+
+                <div>
+                    <strong>Cancel subscription</strong>
+                    <span>Canceling your subscription will downgrade your workspace to the Free plan at the end of your current billing period.</span>
+                </div>
+
+                <button class="danger-btn">Cancel subscription</button>
+
+            </section>
+
+        </div>
+    </main>
+
+</body>
+</html>

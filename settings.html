@@ -1,0 +1,528 @@
+s<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings - Mail Service</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="settings.css">
+</head>
+<body>
+
+    <aside class="sidebar">
+        <div class="sidebar-top">
+            <a href="dashboard.html" class="sidebar-brand">
+                <img src="images/logo.png" alt="Mail Service">
+                <span>Mail Service</span>
+            </a>
+
+            <div class="workspace">
+                <div class="workspace-icon">M</div>
+                <div class="workspace-info">
+                    <span class="workspace-label">Workspace</span>
+                    <strong>My Workspace</strong>
+                </div>
+                <span class="workspace-arrow">⌄</span>
+            </div>
+        </div>
+
+        <nav class="sidebar-nav">
+            <div class="nav-section">
+                <span class="nav-section-title">Workspace</span>
+
+                <a href="dashboard.html" class="nav-item">
+                    <span class="nav-icon">
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <path d="M4 13h6V4H4v9ZM4 20h6v-4H4v4ZM14 20h6v-9h-6v9ZM14 11h6V4h-6v7Z" stroke="currentColor" stroke-width="1.7"/>
+                        </svg>
+                    </span>
+                    Overview
+                </a>
+
+                <a href="emails.html" class="nav-item">
+                    <span class="nav-icon">
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <path d="M4 6.5h16v11H4v-11Z" stroke="currentColor" stroke-width="1.7"/>
+                            <path d="m4.5 7 7.5 6 7.5-6" stroke="currentColor" stroke-width="1.7"/>
+                        </svg>
+                    </span>
+                    Emails
+                </a>
+
+                <a href="templates.html" class="nav-item">
+                    <span class="nav-icon">
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <path d="M5 4.5h14v15H5v-15Z" stroke="currentColor" stroke-width="1.7"/>
+                            <path d="M8 8h8M8 11.5h8M8 15h5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+                        </svg>
+                    </span>
+                    Templates
+                </a>
+            </div>
+
+            <div class="nav-section">
+                <span class="nav-section-title">Infrastructure</span>
+
+                <a href="api.html" class="nav-item">
+                    <span class="nav-icon">
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <path d="M8 5 4 9l4 4M16 5l4 4-4 4M14 3l-4 18" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </span>
+                    API keys
+                </a>
+
+                <a href="logs.html" class="nav-item">
+                    <span class="nav-icon">
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <path d="M5 4.5h14v15H5v-15Z" stroke="currentColor" stroke-width="1.7"/>
+                            <path d="M8 8h8M8 11.5h5M8 15h7" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+                        </svg>
+                    </span>
+                    Delivery logs
+                </a>
+
+                <a href="webhooks.html" class="nav-item">
+                    <span class="nav-icon">
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <path d="M8 17h8M7 7h10M12 7v10M7 7a3 3 0 1 0 0 6h2M17 17a3 3 0 1 1 0-6h-2" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+                        </svg>
+                    </span>
+                    Webhooks
+                </a>
+            </div>
+
+            <div class="nav-section">
+                <span class="nav-section-title">Account</span>
+
+                <a href="settings.html" class="nav-item active">
+                    <span class="nav-icon">
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <circle cx="12" cy="12" r="3.2" stroke="currentColor" stroke-width="1.7"/>
+                            <path d="M19 13.5v-3l-2-.7a6.4 6.4 0 0 0-.7-1.6l.9-1.9-2.1-2.1-1.9.9a6.4 6.4 0 0 0-1.6-.7L11 2.5H8l-.7 1.9a6.4 6.4 0 0 0-1.6.7l-1.9-.9-2.1 2.1.9 1.9a6.4 6.4 0 0 0-.7 1.6l-2 .7v3l2 .7c.2.6.4 1.1.7 1.6l-.9 1.9 2.1 2.1 1.9-.9c.5.3 1 .5 1.6.7l.7 2h3l.7-2c.6-.2 1.1-.4 1.6-.7l1.9.9 2.1-2.1-.9-1.9c.3-.5.5-1 .7-1.6l2-.7Z" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/>
+                        </svg>
+                    </span>
+                    Settings
+                </a>
+
+                <a href="billing.html" class="nav-item">
+                    <span class="nav-icon">
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <rect x="3.5" y="5.5" width="17" height="13" rx="2" stroke="currentColor" stroke-width="1.7"/>
+                            <path d="M3.5 9h17M7 14h3" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+                        </svg>
+                    </span>
+                    Billing
+                </a>
+            </div>
+        </nav>
+
+        <div class="sidebar-bottom">
+            <div class="help-card">
+                <div class="help-icon">
+                    <svg viewBox="0 0 24 24" fill="none">
+                        <circle cx="12" cy="12" r="8.5" stroke="currentColor" stroke-width="1.7"/>
+                        <path d="M9.8 9.2a2.4 2.4 0 1 1 4.1 1.7c-.9.8-1.9 1.2-1.9 2.5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+                        <circle cx="12" cy="16.5" r=".8" fill="currentColor"/>
+                    </svg>
+                </div>
+                <div>
+                    <strong>Need help?</strong>
+                    <span>Read the documentation</span>
+                </div>
+            </div>
+
+            <div class="user-profile">
+                <div class="user-avatar">MS</div>
+                <div class="user-info">
+                    <strong>Mohd Saif</strong>
+                    <span>Free plan</span>
+                </div>
+                <span class="user-more">•••</span>
+            </div>
+        </div>
+    </aside>
+
+    <main class="main-content">
+        <header class="topbar">
+            <div class="system-status">
+                <span class="status-dot"></span>
+                All systems operational
+            </div>
+
+            <div class="topbar-actions">
+                <button class="icon-button">
+                    <svg viewBox="0 0 24 24" fill="none">
+                        <path d="M18 9a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9ZM10 21h4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+                    </svg>
+                    <span class="notification-dot"></span>
+                </button>
+                <div class="top-avatar">MS</div>
+            </div>
+        </header>
+
+        <div class="page-content">
+
+            <div class="page-header">
+                <div>
+                    <span class="page-kicker">Workspace configuration</span>
+                    <h1>Settings</h1>
+                    <p>Manage your workspace, sending preferences, security, and account configuration.</p>
+                </div>
+            </div>
+
+            <div class="settings-layout">
+
+                <aside class="settings-nav">
+                    <a href="#profile" class="settings-nav-item active">
+                        <span>Profile</span>
+                        <small>Personal information</small>
+                    </a>
+
+                    <a href="#workspace" class="settings-nav-item">
+                        <span>Workspace</span>
+                        <small>Workspace details</small>
+                    </a>
+
+                    <a href="#email" class="settings-nav-item">
+                        <span>Email configuration</span>
+                        <small>Sending defaults</small>
+                    </a>
+
+                    <a href="#notifications" class="settings-nav-item">
+                        <span>Notifications</span>
+                        <small>Alerts and updates</small>
+                    </a>
+
+                    <a href="#security" class="settings-nav-item">
+                        <span>Security</span>
+                        <small>Password and sessions</small>
+                    </a>
+
+                    <a href="#danger" class="settings-nav-item danger-link">
+                        <span>Danger zone</span>
+                        <small>Permanent actions</small>
+                    </a>
+                </aside>
+
+                <div class="settings-content">
+
+                    <section class="settings-section" id="profile">
+                        <div class="section-heading">
+                            <div>
+                                <h2>Profile</h2>
+                                <p>Your personal information and account identity.</p>
+                            </div>
+                        </div>
+
+                        <div class="settings-card">
+                            <div class="profile-header">
+                                <div class="profile-avatar">MS</div>
+                                <div class="profile-details">
+                                    <strong>Mohd Saif</strong>
+                                    <span>Account owner</span>
+                                </div>
+                                <button class="secondary-btn">Change avatar</button>
+                            </div>
+
+                            <div class="form-grid">
+                                <div class="form-group">
+                                    <label for="first-name">First name</label>
+                                    <input id="first-name" type="text" value="Mohd">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="last-name">Last name</label>
+                                    <input id="last-name" type="text" value="Saif">
+                                </div>
+
+                                <div class="form-group full">
+                                    <label for="email">Email address</label>
+                                    <input id="email" type="email" value="saif@example.com">
+                                    <span class="field-note">Used for account notifications and security alerts.</span>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="username">Username</label>
+                                    <input id="username" type="text" value="mohdsaif">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="timezone">Timezone</label>
+                                    <select id="timezone">
+                                        <option>Asia/Kolkata (UTC+05:30)</option>
+                                        <option>UTC</option>
+                                        <option>America/New_York</option>
+                                        <option>Europe/London</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="card-footer">
+                                <span>Last updated recently</span>
+                                <button class="primary-btn">Save changes</button>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="settings-section" id="workspace">
+                        <div class="section-heading">
+                            <div>
+                                <h2>Workspace</h2>
+                                <p>Configure the identity and defaults for your Mail Service workspace.</p>
+                            </div>
+                        </div>
+
+                        <div class="settings-card">
+                            <div class="form-grid">
+                                <div class="form-group full">
+                                    <label for="workspace-name">Workspace name</label>
+                                    <input id="workspace-name" type="text" value="My Workspace">
+                                    <span class="field-note">This name is visible throughout your dashboard.</span>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="workspace-slug">Workspace slug</label>
+                                    <div class="input-prefix">
+                                        <span>mailservice.com/</span>
+                                        <input id="workspace-slug" type="text" value="my-workspace">
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="default-environment">Default environment</label>
+                                    <select id="default-environment">
+                                        <option>Production</option>
+                                        <option>Development</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="card-footer">
+                                <span>Changes apply to the entire workspace.</span>
+                                <button class="primary-btn">Save workspace</button>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="settings-section" id="email">
+                        <div class="section-heading">
+                            <div>
+                                <h2>Email configuration</h2>
+                                <p>Set the default behavior for outgoing messages.</p>
+                            </div>
+                        </div>
+
+                        <div class="settings-card">
+
+                            <div class="form-grid">
+                                <div class="form-group">
+                                    <label for="sender-name">Default sender name</label>
+                                    <input id="sender-name" type="text" value="Mail Service">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="sender-email">Default sender email</label>
+                                    <input id="sender-email" type="email" value="noreply@mailservice.com">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="reply-email">Reply-to address</label>
+                                    <input id="reply-email" type="email" value="support@mailservice.com">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="retry-count">Maximum retries</label>
+                                    <select id="retry-count">
+                                        <option>3 retries</option>
+                                        <option>5 retries</option>
+                                        <option>7 retries</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="divider"></div>
+
+                            <div class="setting-row">
+                                <div>
+                                    <strong>Automatic retries</strong>
+                                    <span>Retry temporary delivery failures automatically.</span>
+                                </div>
+                                <label class="switch">
+                                    <input type="checkbox" checked>
+                                    <span></span>
+                                </label>
+                            </div>
+
+                            <div class="setting-row">
+                                <div>
+                                    <strong>Track delivery events</strong>
+                                    <span>Record delivery, bounce, failure, and retry events.</span>
+                                </div>
+                                <label class="switch">
+                                    <input type="checkbox" checked>
+                                    <span></span>
+                                </label>
+                            </div>
+
+                            <div class="setting-row">
+                                <div>
+                                    <strong>Include message IDs in responses</strong>
+                                    <span>Return a unique message ID for every accepted email.</span>
+                                </div>
+                                <label class="switch">
+                                    <input type="checkbox" checked>
+                                    <span></span>
+                                </label>
+                            </div>
+
+                            <div class="card-footer">
+                                <span>Default email behavior</span>
+                                <button class="primary-btn">Save configuration</button>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="settings-section" id="notifications">
+                        <div class="section-heading">
+                            <div>
+                                <h2>Notifications</h2>
+                                <p>Choose which workspace events should generate notifications.</p>
+                            </div>
+                        </div>
+
+                        <div class="settings-card">
+
+                            <div class="setting-row">
+                                <div>
+                                    <strong>Delivery failures</strong>
+                                    <span>Notify when emails permanently fail to deliver.</span>
+                                </div>
+                                <label class="switch">
+                                    <input type="checkbox" checked>
+                                    <span></span>
+                                </label>
+                            </div>
+
+                            <div class="setting-row">
+                                <div>
+                                    <strong>High failure rate</strong>
+                                    <span>Alert when your delivery failure rate increases unexpectedly.</span>
+                                </div>
+                                <label class="switch">
+                                    <input type="checkbox" checked>
+                                    <span></span>
+                                </label>
+                            </div>
+
+                            <div class="setting-row">
+                                <div>
+                                    <strong>API usage limits</strong>
+                                    <span>Notify when usage approaches your plan limits.</span>
+                                </div>
+                                <label class="switch">
+                                    <input type="checkbox" checked>
+                                    <span></span>
+                                </label>
+                            </div>
+
+                            <div class="setting-row">
+                                <div>
+                                    <strong>Product updates</strong>
+                                    <span>Receive important Mail Service product announcements.</span>
+                                </div>
+                                <label class="switch">
+                                    <input type="checkbox">
+                                    <span></span>
+                                </label>
+                            </div>
+
+                            <div class="card-footer">
+                                <span>Notification preferences</span>
+                                <button class="primary-btn">Save preferences</button>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="settings-section" id="security">
+                        <div class="section-heading">
+                            <div>
+                                <h2>Security</h2>
+                                <p>Manage your password and active account sessions.</p>
+                            </div>
+                        </div>
+
+                        <div class="settings-card">
+                            <div class="security-row">
+                                <div class="security-icon">
+                                    <svg viewBox="0 0 24 24" fill="none">
+                                        <rect x="5" y="10" width="14" height="10" rx="2" stroke="currentColor" stroke-width="1.7"/>
+                                        <path d="M8 10V7a4 4 0 0 1 8 0v3" stroke="currentColor" stroke-width="1.7"/>
+                                    </svg>
+                                </div>
+                                <div class="security-info">
+                                    <strong>Password</strong>
+                                    <span>Last changed 24 days ago</span>
+                                </div>
+                                <button class="secondary-btn">Change password</button>
+                            </div>
+
+                            <div class="divider"></div>
+
+                            <div class="security-row">
+                                <div class="security-icon green">
+                                    <svg viewBox="0 0 24 24" fill="none">
+                                        <path d="m6 12 4 4 8-9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                                <div class="security-info">
+                                    <strong>Two-factor authentication</strong>
+                                    <span>Add another layer of protection to your account.</span>
+                                </div>
+                                <span class="security-status">Enabled</span>
+                            </div>
+
+                            <div class="divider"></div>
+
+                            <div class="security-row">
+                                <div class="security-icon">
+                                    <svg viewBox="0 0 24 24" fill="none">
+                                        <rect x="3.5" y="5" width="17" height="13.5" rx="2" stroke="currentColor" stroke-width="1.7"/>
+                                        <path d="M7 15h.01M10.5 15h.01M14 15h.01M17.5 15h.01" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                    </svg>
+                                </div>
+                                <div class="security-info">
+                                    <strong>Active sessions</strong>
+                                    <span>2 active sessions on your account.</span>
+                                </div>
+                                <button class="secondary-btn">Manage sessions</button>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="settings-section" id="danger">
+                        <div class="section-heading">
+                            <div>
+                                <h2>Danger zone</h2>
+                                <p>Permanent actions that affect your workspace and account.</p>
+                            </div>
+                        </div>
+
+                        <div class="danger-card">
+                            <div>
+                                <strong>Delete workspace</strong>
+                                <span>Permanently delete this workspace, templates, logs, API keys, and all associated data.</span>
+                            </div>
+                            <button class="danger-btn">Delete workspace</button>
+                        </div>
+                    </section>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>

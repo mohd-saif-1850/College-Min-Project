@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Templates - Mail Service</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="templates.css">
+</head>
+<body>
+
+    <aside class="sidebar">
+        <div class="sidebar-top">
+            <a href="dashboard.html" class="sidebar-brand">
+                <img src="images/logo.png" alt="Mail Service">
+                <span>Mail Service</span>
+            </a>
+
+            <div class="workspace">
+                <div class="workspace-icon">M</div>
+                <div class="workspace-info">
+                    <span class="workspace-label">Workspace</span>
+                    <strong>My Workspace</strong>
+                </div>
+                <span class="workspace-arrow">⌄</span>
+            </div>
+        </div>
+
+        <nav class="sidebar-nav">
+            <div class="nav-section">
+                <span class="nav-section-title">Workspace</span>
+
+                <a href="dashboard.html" class="nav-item">
+                    <span class="nav-icon">
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <path d="M4 13h6V4H4v9ZM4 20h6v-4H4v4ZM14 20h6v-9h-6v9ZM14 11h6V4h-6v7Z" stroke="currentColor" stroke-width="1.7"/>
+                        </svg>
+                    </span>
+                    Overview
+                </a>
+
+                <a href="emails.html" class="nav-item">
+                    <span class="nav-icon">
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <path d="M4 6.5h16v11H4v-11Z" stroke="currentColor" stroke-width="1.7"/>
+                            <path d="m4.5 7 7.5 6 7.5-6" stroke="currentColor" stroke-width="1.7"/>
+                        </svg>
+                    </span>
+                    Emails
+                </a>
+
+                <a href="templates.html" class="nav-item active">
+                    <span class="nav-icon">
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <path d="M5 4.5h14v15H5v-15Z" stroke="currentColor" stroke-width="1.7"/>
+                            <path d="M8 8h8M8 11.5h8M8 15h5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+                        </svg>
+                    </span>
+                    Templates
+                </a>
+            </div>
+
+            <div class="nav-section">
+                <span class="nav-section-title">Infrastructure</span>
+
+                <a href="api.html" class="nav-item">
+                    <span class="nav-icon">
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <path d="M8 5 4 9l4 4M16 5l4 4-4 4M14 3l-4 18" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </span>
+                    API keys
+                </a>
+
+                <a href="logs.html" class="nav-item">
+                    <span class="nav-icon">
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <path d="M5 4.5h14v15H5v-15Z" stroke="currentColor" stroke-width="1.7"/>
+                            <path d="M8 8h8M8 11.5h5M8 15h7" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+                        </svg>
+                    </span>
+                    Delivery logs
+                </a>
+
+                <a href="webhooks.html" class="nav-item">
+                    <span class="nav-icon">
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <path d="M8 17h8M7 7h10M12 7v10M7 7a3 3 0 1 0 0 6h2M17 17a3 3 0 1 1 0-6h-2" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+                        </svg>
+                    </span>
+                    Webhooks
+                </a>
+            </div>
+
+            <div class="nav-section">
+                <span class="nav-section-title">Account</span>
+
+                <a href="settings.html" class="nav-item">
+                    <span class="nav-icon">
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <path d="M12 15.2a3.2 3.2 0 1 0 0-6.4 3.2 3.2 0 0 0 0 6.4Z" stroke="currentColor" stroke-width="1.7"/>
+                            <path d="m19.4 15 .1.1a1.7 1.7 0 0 1-2.4 2.4l-.1-.1a1.7 1.7 0 0 0-2.9 1.2v.2a1.7 1.7 0 0 1-3.4 0v-.2a1.7 1.7 0 0 0-2.9-1.2l-.1.1a1.7 1.7 0 0 1-2.4-2.4l.1-.1A1.7 1.7 0 0 0 6.2 12a1.7 1.7 0 0 0-1.2-2.9h-.2a1.7 1.7 0 0 1 0-3.4H5A1.7 1.7 0 0 0 6.2 3a1.7 1.7 0 0 1 2.9-1.2l.1.1A1.7 1.7 0 0 0 12 2.1V2a1.7 1.7 0 0 1 3.4 0v.1a1.7 1.7 0 0 0 2.9 1.2l.1-.1a1.7 1.7 0 0 1 2.4 2.4l-.1.1A1.7 1.7 0 0 0 19.5 9h.2a1.7 1.7 0 0 1 0 3.4h-.2a1.7 1.7 0 0 0-.1 2.6Z" stroke="currentColor" stroke-width="1.2"/>
+                        </svg>
+                    </span>
+                    Settings
+                </a>
+
+                <a href="billing.html" class="nav-item">
+                    <span class="nav-icon">
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <rect x="3.5" y="5.5" width="17" height="13" rx="2" stroke="currentColor" stroke-width="1.7"/>
+                            <path d="M3.5 9h17M7 14h3" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+                        </svg>
+                    </span>
+                    Billing
+                </a>
+            </div>
+        </nav>
+
+        <div class="sidebar-bottom">
+            <div class="help-card">
+                <div class="help-icon">
+                    <svg viewBox="0 0 24 24" fill="none">
+                        <circle cx="12" cy="12" r="8.5" stroke="currentColor" stroke-width="1.7"/>
+                        <path d="M9.8 9.2a2.4 2.4 0 1 1 4.1 1.7c-.9.8-1.9 1.2-1.9 2.5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+                        <circle cx="12" cy="16.5" r=".8" fill="currentColor"/>
+                    </svg>
+                </div>
+                <div>
+                    <strong>Need help?</strong>
+                    <span>Read the documentation</span>
+                </div>
+            </div>
+
+            <div class="user-profile">
+                <div class="user-avatar">MS</div>
+                <div class="user-info">
+                    <strong>Mohd Saif</strong>
+                    <span>Free plan</span>
+                </div>
+                <span class="user-more">•••</span>
+            </div>
+        </div>
+    </aside>
+
+    <main class="main-content">
+        <header class="topbar">
+            <div class="system-status">
+                <span class="status-dot"></span>
+                All systems operational
+            </div>
+
+            <div class="topbar-actions">
+                <button class="icon-button" aria-label="Notifications">
+                    <svg viewBox="0 0 24 24" fill="none">
+                        <path d="M18 9a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9ZM10 21h4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+                    </svg>
+                    <span class="notification-dot"></span>
+                </button>
+                <div class="top-avatar">MS</div>
+            </div>
+        </header>
+
+        <div class="page-content">
+            <div class="page-header">
+                <div>
+                    <span class="page-kicker">Email management</span>
+                    <h1>Templates</h1>
+                    <p>Create, manage, and reuse email templates across your applications.</p>
+                </div>
+
+                <div class="header-actions">
+                    <button class="secondary-btn">
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                        </svg>
+                        Import template
+                    </button>
+                    <a href="template-editor.html" class="primary-btn">
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                        </svg>
+                        Create template
+                    </a>
+                </div>
+            </div>
+
+            <section class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-top">
+                        <span>Total templates</span>
+                        <div class="stat-icon blue">
+                            <svg viewBox="0 0 24 24" fill="none">
+                                <path d="M5 4.5h14v15H5v-15Z" stroke="currentColor" stroke-width="1.7"/>
+                                <path d="M8 8h8M8 11.5h8M8 15h5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <strong>18</strong>
+                    <span class="stat-change positive">+3 this month</span>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-top">
+                        <span>Published</span>
+                        <div class="stat-icon green">
+                            <svg viewBox="0 0 24 24" fill="none">
+                                <path d="m6 12 4 4 8-9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <strong>14</strong>
+                    <span class="stat-change neutral">78% of templates</span>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-top">
+                        <span>Emails sent</span>
+                        <div class="stat-icon purple">
+                            <svg viewBox="0 0 24 24" fill="none">
+                                <path d="M4 6.5h16v11H4v-11Z" stroke="currentColor" stroke-width="1.7"/>
+                                <path d="m4.5 7 7.5 6 7.5-6" stroke="currentColor" stroke-width="1.7"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <strong>2,481</strong>
+                    <span class="stat-change positive">+18.4% this month</span>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-top">
+                        <span>Avg. delivery</span>
+                        <div class="stat-icon orange">
+                            <svg viewBox="0 0 24 24" fill="none">
+                                <circle cx="12" cy="12" r="8.5" stroke="currentColor" stroke-width="1.7"/>
+                                <path d="M12 7v5l3 2" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <strong>1.8s</strong>
+                    <span class="stat-change positive">12% faster</span>
+                </div>
+            </section>
+
+            <section class="toolbar">
+                <div class="search-box">
+                    <svg viewBox="0 0 24 24" fill="none">
+                        <circle cx="10.8" cy="10.8" r="6.3" stroke="currentColor" stroke-width="1.7"/>
+                        <path d="m16 16 4.5 4.5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+                    </svg>
+                    <input type="text" placeholder="Search templates...">
+                </div>
+
+                <div class="filter-group">
+                    <button class="filter-btn">
+                        Status
+                        <span>⌄</span>
+                    </button>
+                    <button class="filter-btn">
+                        Category
+                        <span>⌄</span>
+                    </button>
+                    <button class="filter-btn">
+                        Environment
+                        <span>⌄</span>
+                    </button>
+                </div>
+            </section>
+
+            <section class="templates-panel">
+                <div class="panel-header">
+                    <div>
+                        <h2>All templates</h2>
+                        <span>18 templates across your workspace</span>
+                    </div>
+
+                    <div class="view-toggle">
+                        <button class="view-btn active" aria-label="List view">
+                            <svg viewBox="0 0 24 24" fill="none">
+                                <path d="M5 7h14M5 12h14M5 17h14" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+                            </svg>
+                        </button>
+                        <button class="view-btn" aria-label="Grid view">
+                            <svg viewBox="0 0 24 24" fill="none">
+                                <rect x="5" y="5" width="5" height="5" rx="1" stroke="currentColor" stroke-width="1.7"/>
+                                <rect x="14" y="5" width="5" height="5" rx="1" stroke="currentColor" stroke-width="1.7"/>
+                                <rect x="5" y="14" width="5" height="5" rx="1" stroke="currentColor" stroke-width="1.7"/>
+                                <rect x="14" y="14" width="5" height="5" rx="1" stroke="currentColor" stroke-width="1.7"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="template-table">
+                    <div class="table-head">
+                        <span>Template</span>
+                        <span>Status</span>
+                        <span>Environment</span>
+                        <span>Usage</span>
+                        <span>Updated</span>
+                        <span></span>
+                    </div>
+
+                    <a href="template-editor.html" class="template-row">
+                        <div class="template-name">
+                            <div class="template-icon blue-bg">
+                                <svg viewBox="0 0 24 24" fill="none">
+                                    <path d="M5 6h14v12H5V6Z" stroke="currentColor" stroke-width="1.6"/>
+                                    <path d="m5.5 7 6.5 5 6.5-5" stroke="currentColor" stroke-width="1.6"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <strong>Welcome Email</strong>
+                                <span>welcome_email</span>
+                            </div>
+                        </div>
+
+                        <span class="status-pill published">
+                            <i></i>
+                            Published
+                        </span>
+
+                        <span class="environment">
+                            <i></i>
+                            Production
+                        </span>
+
+                        <span class="usage">1,248 sends</span>
+                        <span class="updated">2 hours ago</span>
+
+                        <span class="row-arrow">→</span>
+                    </a>
+
+                    <a href="template-editor.html" class="template-row">
+                        <div class="template-name">
+                            <div class="template-icon purple-bg">
+                                <svg viewBox="0 0 24 24" fill="none">
+                                    <path d="M6 5h12v14H6V5Z" stroke="currentColor" stroke-width="1.6"/>
+                                    <path d="M9 9h6M9 12h6M9 15h4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <strong>Password Reset</strong>
+                                <span>password_reset</span>
+                            </div>
+                        </div>
+
+                        <span class="status-pill published">
+                            <i></i>
+                            Published
+                        </span>
+
+                        <span class="environment">
+                            <i></i>
+                            Production
+                        </span>
+
+                        <span class="usage">482 sends</span>
+                        <span class="updated">Yesterday</span>
+
+                        <span class="row-arrow">→</span>
+                    </a>
+
+                    <a href="template-editor.html" class="template-row">
+                        <div class="template-name">
+                            <div class="template-icon green-bg">
+                                <svg viewBox="0 0 24 24" fill="none">
+                                    <path d="M5 6h14v12H5V6Z" stroke="currentColor" stroke-width="1.6"/>
+                                    <path d="m7.5 9 4.5 3.5L16.5 9" stroke="currentColor" stroke-width="1.6"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <strong>Email Verification</strong>
+                                <span>email_verification</span>
+                            </div>
+                        </div>
+
+                        <span class="status-pill published">
+                            <i></i>
+                            Published
+                        </span>
+
+                        <span class="environment">
+                            <i></i>
+                            Production
+                        </span>
+
+                        <span class="usage">391 sends</span>
+                        <span class="updated">2 days ago</span>
+
+                        <span class="row-arrow">→</span>
+                    </a>
+
+                    <a href="template-editor.html" class="template-row">
+                        <div class="template-name">
+                            <div class="template-icon orange-bg">
+                                <svg viewBox="0 0 24 24" fill="none">
+                                    <path d="M5 6h14v12H5V6Z" stroke="currentColor" stroke-width="1.6"/>
+                                    <path d="M8 9h8M8 12h5M8 15h7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <strong>Order Confirmation</strong>
+                                <span>order_confirmation</span>
+                            </div>
+                        </div>
+
+                        <span class="status-pill published">
+                            <i></i>
+                            Published
+                        </span>
+
+                        <span class="environment">
+                            <i></i>
+                            Production
+                        </span>
+
+                        <span class="usage">214 sends</span>
+                        <span class="updated">3 days ago</span>
+
+                        <span class="row-arrow">→</span>
+                    </a>
+
+                    <a href="template-editor.html" class="template-row">
+                        <div class="template-name">
+                            <div class="template-icon blue-bg">
+                                <svg viewBox="0 0 24 24" fill="none">
+                                    <path d="M5 6h14v12H5V6Z" stroke="currentColor" stroke-width="1.6"/>
+                                    <path d="M8 9h8M8 12h8M8 15h4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <strong>Invoice Ready</strong>
+                                <span>invoice_ready</span>
+                            </div>
+                        </div>
+
+                        <span class="status-pill draft">
+                            <i></i>
+                            Draft
+                        </span>
+
+                        <span class="environment">
+                            <i></i>
+                            Development
+                        </span>
+
+                        <span class="usage">0 sends</span>
+                        <span class="updated">4 days ago</span>
+
+                        <span class="row-arrow">→</span>
+                    </a>
+
+                    <a href="template-editor.html" class="template-row">
+                        <div class="template-name">
+                            <div class="template-icon red-bg">
+                                <svg viewBox="0 0 24 24" fill="none">
+                                    <path d="M5 6h14v12H5V6Z" stroke="currentColor" stroke-width="1.6"/>
+                                    <path d="M8 9h8M8 12h6M8 15h5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <strong>Account Suspended</strong>
+                                <span>account_suspended</span>
+                            </div>
+                        </div>
+
+                        <span class="status-pill published">
+                            <i></i>
+                            Published
+                        </span>
+
+                        <span class="environment">
+                            <i></i>
+                            Production
+                        </span>
+
+                        <span class="usage">46 sends</span>
+                        <span class="updated">5 days ago</span>
+
+                        <span class="row-arrow">→</span>
+                    </a>
+                </div>
+
+                <div class="pagination">
+                    <span>Showing 1–6 of 18 templates</span>
+                    <div class="pagination-buttons">
+                        <button disabled>Previous</button>
+                        <button class="page-number active">1</button>
+                        <button class="page-number">2</button>
+                        <button class="page-number">3</button>
+                        <button>Next</button>
+                    </div>
+                </div>
+            </section>
+
+            <div class="bottom-grid">
+                <section class="activity-panel">
+                    <div class="panel-header compact">
+                        <div>
+                            <h2>Recent template activity</h2>
+                            <span>Latest changes across your workspace</span>
+                        </div>
+                        <a href="logs.html">View activity</a>
+                    </div>
+
+                    <div class="activity-list">
+                        <div class="activity-item">
+                            <div class="activity-avatar blue">MS</div>
+                            <div class="activity-content">
+                                <strong>Welcome Email</strong>
+                                <span>Published a new version</span>
+                            </div>
+                            <time>2h ago</time>
+                        </div>
+
+                        <div class="activity-item">
+                            <div class="activity-avatar purple">MS</div>
+                            <div class="activity-content">
+                                <strong>Password Reset</strong>
+                                <span>Updated subject and content</span>
+                            </div>
+                            <time>Yesterday</time>
+                        </div>
+
+                        <div class="activity-item">
+                            <div class="activity-avatar green">MS</div>
+                            <div class="activity-content">
+                                <strong>Email Verification</strong>
+                                <span>Published template</span>
+                            </div>
+                            <time>2d ago</time>
+                        </div>
+
+                        <div class="activity-item">
+                            <div class="activity-avatar orange">MS</div>
+                            <div class="activity-content">
+                                <strong>Invoice Ready</strong>
+                                <span>Created a new draft</span>
+                            </div>
+                            <time>4d ago</time>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="popular-panel">
+                    <div class="panel-header compact">
+                        <div>
+                            <h2>Most used</h2>
+                            <span>Templates with highest usage</span>
+                        </div>
+                    </div>
+
+                    <div class="popular-list">
+                        <div class="popular-item">
+                            <div class="rank">01</div>
+                            <div class="popular-info">
+                                <strong>Welcome Email</strong>
+                                <span>1,248 sends</span>
+                            </div>
+                            <div class="usage-bar">
+                                <span style="width: 100%"></span>
+                            </div>
+                        </div>
+
+                        <div class="popular-item">
+                            <div class="rank">02</div>
+                            <div class="popular-info">
+                                <strong>Password Reset</strong>
+                                <span>482 sends</span>
+                            </div>
+                            <div class="usage-bar">
+                                <span style="width: 62%"></span>
+                            </div>
+                        </div>
+
+                        <div class="popular-item">
+                            <div class="rank">03</div>
+                            <div class="popular-info">
+                                <strong>Email Verification</strong>
+                                <span>391 sends</span>
+                            </div>
+                            <div class="usage-bar">
+                                <span style="width: 49%"></span>
+                            </div>
+                        </div>
+
+                        <div class="popular-item">
+                            <div class="rank">04</div>
+                            <div class="popular-info">
+                                <strong>Order Confirmation</strong>
+                                <span>214 sends</span>
+                            </div>
+                            <div class="usage-bar">
+                                <span style="width: 35%"></span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <section class="template-info">
+                <div class="info-icon">
+                    <svg viewBox="0 0 24 24" fill="none">
+                        <circle cx="12" cy="12" r="8.5" stroke="currentColor" stroke-width="1.7"/>
+                        <path d="M12 10.5v5M12 7.5h.01" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <div>
+                    <strong>Templates make your email infrastructure easier to maintain.</strong>
+                    <span>Store reusable content once and reference it from your application using a template ID. Changes can be versioned without changing your integration.</span>
+                </div>
+                <a href="docs.html">Read the docs →</a>
+            </section>
+        </div>
+    </main>
+
+</body>
+</html>

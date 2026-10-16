@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delivery Logs - Mail Service</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="logs.css">
+</head>
+<body>
+
+    <aside class="sidebar">
+        <div class="sidebar-top">
+            <a href="dashboard.html" class="sidebar-brand">
+                <img src="images/logo.png" alt="Mail Service">
+                <span>Mail Service</span>
+            </a>
+
+            <div class="workspace">
+                <div class="workspace-icon">M</div>
+                <div class="workspace-info">
+                    <span class="workspace-label">Workspace</span>
+                    <strong>My Workspace</strong>
+                </div>
+                <span class="workspace-arrow">⌄</span>
+            </div>
+        </div>
+
+        <nav class="sidebar-nav">
+            <div class="nav-section">
+                <span class="nav-section-title">Workspace</span>
+
+                <a href="dashboard.html" class="nav-item">
+                    <span class="nav-icon">
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <path d="M4 13h6V4H4v9ZM4 20h6v-4H4v4ZM14 20h6v-9h-6v9ZM14 11h6V4h-6v7Z" stroke="currentColor" stroke-width="1.7"/>
+                        </svg>
+                    </span>
+                    Overview
+                </a>
+
+                <a href="emails.html" class="nav-item">
+                    <span class="nav-icon">
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <path d="M4 6.5h16v11H4v-11Z" stroke="currentColor" stroke-width="1.7"/>
+                            <path d="m4.5 7 7.5 6 7.5-6" stroke="currentColor" stroke-width="1.7"/>
+                        </svg>
+                    </span>
+                    Emails
+                </a>
+
+                <a href="templates.html" class="nav-item">
+                    <span class="nav-icon">
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <path d="M5 4.5h14v15H5v-15Z" stroke="currentColor" stroke-width="1.7"/>
+                            <path d="M8 8h8M8 11.5h8M8 15h5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+                        </svg>
+                    </span>
+                    Templates
+                </a>
+            </div>
+
+            <div class="nav-section">
+                <span class="nav-section-title">Infrastructure</span>
+
+                <a href="api.html" class="nav-item">
+                    <span class="nav-icon">
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <path d="M8 5 4 9l4 4M16 5l4 4-4 4M14 3l-4 18" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </span>
+                    API keys
+                </a>
+
+                <a href="logs.html" class="nav-item active">
+                    <span class="nav-icon">
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <path d="M5 4.5h14v15H5v-15Z" stroke="currentColor" stroke-width="1.7"/>
+                            <path d="M8 8h8M8 11.5h5M8 15h7" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+                        </svg>
+                    </span>
+                    Delivery logs
+                </a>
+
+                <a href="webhooks.html" class="nav-item">
+                    <span class="nav-icon">
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <path d="M8 17h8M7 7h10M12 7v10M7 7a3 3 0 1 0 0 6h2M17 17a3 3 0 1 1 0-6h-2" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+                        </svg>
+                    </span>
+                    Webhooks
+                </a>
+            </div>
+
+            <div class="nav-section">
+                <span class="nav-section-title">Account</span>
+
+                <a href="settings.html" class="nav-item">
+                    <span class="nav-icon">
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <circle cx="12" cy="12" r="3.2" stroke="currentColor" stroke-width="1.7"/>
+                            <path d="M19 13.5v-3l-2-.7a6.4 6.4 0 0 0-.7-1.6l.9-1.9-2.1-2.1-1.9.9a6.4 6.4 0 0 0-1.6-.7L11 2.5H8l-.7 1.9a6.4 6.4 0 0 0-1.6.7l-1.9-.9-2.1 2.1.9 1.9a6.4 6.4 0 0 0-.7 1.6l-2 .7v3l2 .7c.2.6.4 1.1.7 1.6l-.9 1.9 2.1 2.1 1.9-.9c.5.3 1 .5 1.6.7l.7 2h3l.7-2c.6-.2 1.1-.4 1.6-.7l1.9.9 2.1-2.1-.9-1.9c.3-.5.5-1 .7-1.6l2-.7Z" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/>
+                        </svg>
+                    </span>
+                    Settings
+                </a>
+
+                <a href="billing.html" class="nav-item">
+                    <span class="nav-icon">
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <rect x="3.5" y="5.5" width="17" height="13" rx="2" stroke="currentColor" stroke-width="1.7"/>
+                            <path d="M3.5 9h17M7 14h3" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+                        </svg>
+                    </span>
+                    Billing
+                </a>
+            </div>
+        </nav>
+
+        <div class="sidebar-bottom">
+            <div class="help-card">
+                <div class="help-icon">
+                    <svg viewBox="0 0 24 24" fill="none">
+                        <circle cx="12" cy="12" r="8.5" stroke="currentColor" stroke-width="1.7"/>
+                        <path d="M9.8 9.2a2.4 2.4 0 1 1 4.1 1.7c-.9.8-1.9 1.2-1.9 2.5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+                        <circle cx="12" cy="16.5" r=".8" fill="currentColor"/>
+                    </svg>
+                </div>
+                <div>
+                    <strong>Need help?</strong>
+                    <span>Read the documentation</span>
+                </div>
+            </div>
+
+            <div class="user-profile">
+                <div class="user-avatar">MS</div>
+                <div class="user-info">
+                    <strong>Mohd Saif</strong>
+                    <span>Free plan</span>
+                </div>
+                <span class="user-more">•••</span>
+            </div>
+        </div>
+    </aside>
+
+    <main class="main-content">
+        <header class="topbar">
+            <div class="system-status">
+                <span class="status-dot"></span>
+                All systems operational
+            </div>
+
+            <div class="topbar-actions">
+                <button class="icon-button">
+                    <svg viewBox="0 0 24 24" fill="none">
+                        <path d="M18 9a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9ZM10 21h4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+                    </svg>
+                    <span class="notification-dot"></span>
+                </button>
+                <div class="top-avatar">MS</div>
+            </div>
+        </header>
+
+        <div class="page-content">
+            <div class="page-header">
+                <div>
+                    <span class="page-kicker">Infrastructure</span>
+                    <h1>Delivery logs</h1>
+                    <p>Inspect every delivery attempt, response, retry, and final email status.</p>
+                </div>
+
+                <div class="header-actions">
+                    <button class="secondary-btn">
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <path d="M12 3v12M7 10l5 5 5-5M5 20h14" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        Export logs
+                    </button>
+                    <button class="primary-btn">
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                        </svg>
+                        Send email
+                    </button>
+                </div>
+            </div>
+
+            <section class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-top">
+                        <span>Delivery attempts</span>
+                        <div class="stat-icon blue">
+                            <svg viewBox="0 0 24 24" fill="none">
+                                <path d="M4 6.5h16v11H4v-11Z" stroke="currentColor" stroke-width="1.7"/>
+                                <path d="m4.5 7 7.5 6 7.5-6" stroke="currentColor" stroke-width="1.7"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <strong>2,481</strong>
+                    <span class="stat-change positive">+18.4% this month</span>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-top">
+                        <span>Delivered</span>
+                        <div class="stat-icon green">
+                            <svg viewBox="0 0 24 24" fill="none">
+                                <path d="m5 12 4.5 4.5L19 7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <strong>2,443</strong>
+                    <span class="stat-change positive">98.5% delivery rate</span>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-top">
+                        <span>Failed</span>
+                        <div class="stat-icon red">
+                            <svg viewBox="0 0 24 24" fill="none">
+                                <circle cx="12" cy="12" r="8.5" stroke="currentColor" stroke-width="1.7"/>
+                                <path d="m9 9 6 6M15 9l-6 6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <strong>18</strong>
+                    <span class="stat-change negative">0.7% failure rate</span>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-top">
+                        <span>Avg. delivery time</span>
+                        <div class="stat-icon purple">
+                            <svg viewBox="0 0 24 24" fill="none">
+                                <circle cx="12" cy="12" r="8.5" stroke="currentColor" stroke-width="1.7"/>
+                                <path d="M12 7v5l3 2" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <strong>1.8s</strong>
+                    <span class="stat-change positive">12% faster</span>
+                </div>
+            </section>
+
+            <section class="delivery-overview">
+                <div class="overview-header">
+                    <div>
+                        <h2>Delivery activity</h2>
+                        <span>Last 24 hours</span>
+                    </div>
+
+                    <div class="legend">
+                        <span><i class="delivered"></i>Delivered</span>
+                        <span><i class="processing"></i>Processing</span>
+                        <span><i class="failed"></i>Failed</span>
+                    </div>
+                </div>
+
+                <div class="chart">
+                    <div class="y-axis">
+                        <span>300</span>
+                        <span>225</span>
+                        <span>150</span>
+                        <span>75</span>
+                        <span>0</span>
+                    </div>
+
+                    <div class="chart-area">
+                        <div class="grid-line line-1"></div>
+                        <div class="grid-line line-2"></div>
+                        <div class="grid-line line-3"></div>
+                        <div class="grid-line line-4"></div>
+                        <div class="grid-line line-5"></div>
+
+                        <svg class="activity-line" viewBox="0 0 1000 240" preserveAspectRatio="none">
+                            <polyline points="0,180 42,169 84,175 126,142 168,151 210,128 252,138 294,102 336,111 378,90 420,105 462,81 504,93 546,67 588,75 630,58 672,72 714,48 756,63 798,44 840,55 882,39 924,47 966,31 1000,37" fill="none" stroke="#155eef" stroke-width="3"/>
+                            <polyline points="0,180 42,169 84,175 126,142 168,151 210,128 252,138 294,102 336,111 378,90 420,105 462,81 504,93 546,67 588,75 630,58 672,72 714,48 756,63 798,44 840,55 882,39 924,47 966,31 1000,37 1000,240 0,240" fill="rgba(21,94,239,.05)" stroke="none"/>
+                        </svg>
+
+                        <div class="x-axis">
+                            <span>12 AM</span>
+                            <span>4 AM</span>
+                            <span>8 AM</span>
+                            <span>12 PM</span>
+                            <span>4 PM</span>
+                            <span>8 PM</span>
+                            <span>12 AM</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="logs-panel">
+                <div class="panel-header">
+                    <div>
+                        <h2>Delivery events</h2>
+                        <span>2,481 events recorded</span>
+                    </div>
+
+                    <div class="view-toggle">
+                        <button class="view-btn active">
+                            <svg viewBox="0 0 24 24" fill="none">
+                                <path d="M5 7h14M5 12h14M5 17h14" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+                            </svg>
+                        </button>
+                        <button class="view-btn">
+                            <svg viewBox="0 0 24 24" fill="none">
+                                <rect x="5" y="5" width="5" height="5" rx="1" stroke="currentColor" stroke-width="1.7"/>
+                                <rect x="14" y="5" width="5" height="5" rx="1" stroke="currentColor" stroke-width="1.7"/>
+                                <rect x="5" y="14" width="5" height="5" rx="1" stroke="currentColor" stroke-width="1.7"/>
+                                <rect x="14" y="14" width="5" height="5" rx="1" stroke="currentColor" stroke-width="1.7"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="filters">
+                    <div class="search-box">
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <circle cx="10.8" cy="10.8" r="6.3" stroke="currentColor" stroke-width="1.7"/>
+                            <path d="m16 16 4.5 4.5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+                        </svg>
+                        <input type="text" placeholder="Search message ID, recipient, subject...">
+                    </div>
+
+                    <button class="filter-btn">
+                        Status
+                        <span>⌄</span>
+                    </button>
+
+                    <button class="filter-btn">
+                        Environment
+                        <span>⌄</span>
+                    </button>
+
+                    <button class="filter-btn">
+                        Event
+                        <span>⌄</span>
+                    </button>
+
+                    <button class="filter-btn date-btn">
+                        Last 24 hours
+                        <span>⌄</span>
+                    </button>
+
+                    <button class="clear-btn">Clear</button>
+                </div>
+
+                <div class="logs-table">
+                    <div class="table-head">
+                        <span>Message</span>
+                        <span>Event</span>
+                        <span>Status</span>
+                        <span>Response</span>
+                        <span>Latency</span>
+                        <span>Time</span>
+                        <span></span>
+                    </div>
+
+                    <a href="email-details.html" class="log-row">
+                        <div class="message-cell">
+                            <div class="message-icon blue-bg">
+                                <svg viewBox="0 0 24 24" fill="none">
+                                    <path d="M5 6.5h14v11H5v-11Z" stroke="currentColor" stroke-width="1.6"/>
+                                    <path d="m5.5 7 6.5 5 6.5-5" stroke="currentColor" stroke-width="1.6"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <strong>msg_8f92a1</strong>
+                                <span>arif.khan@gmail.com</span>
+                            </div>
+                        </div>
+
+                        <span class="event">delivered</span>
+
+                        <span class="status-pill delivered-pill">
+                            <i></i>
+                            Delivered
+                        </span>
+
+                        <span class="response success">250 OK</span>
+
+                        <span class="latency">1.2s</span>
+
+                        <span class="log-time">2 min ago</span>
+
+                        <span class="row-arrow">→</span>
+                    </a>
+
+                    <a href="email-details.html" class="log-row">
+                        <div class="message-cell">
+                            <div class="message-icon purple-bg">
+                                <svg viewBox="0 0 24 24" fill="none">
+                                    <path d="M5 6.5h14v11H5v-11Z" stroke="currentColor" stroke-width="1.6"/>
+                                    <path d="m5.5 7 6.5 5 6.5-5" stroke="currentColor" stroke-width="1.6"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <strong>msg_7bc341</strong>
+                                <span>rahul.sharma@gmail.com</span>
+                            </div>
+                        </div>
+
+                        <span class="event">delivered</span>
+
+                        <span class="status-pill delivered-pill">
+                            <i></i>
+                            Delivered
+                        </span>
+
+                        <span class="response success">250 OK</span>
+
+                        <span class="latency">1.7s</span>
+
+                        <span class="log-time">8 min ago</span>
+
+                        <span class="row-arrow">→</span>
+                    </a>
+
+                    <a href="email-details.html" class="log-row">
+                        <div class="message-cell">
+                            <div class="message-icon green-bg">
+                                <svg viewBox="0 0 24 24" fill="none">
+                                    <path d="M5 6.5h14v11H5v-11Z" stroke="currentColor" stroke-width="1.6"/>
+                                    <path d="m5.5 7 6.5 5 6.5-5" stroke="currentColor" stroke-width="1.6"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <strong>msg_42da18</strong>
+                                <span>nida.farooq@gmail.com</span>
+                            </div>
+                        </div>
+
+                        <span class="event">processing</span>
+
+                        <span class="status-pill processing-pill">
+                            <i></i>
+                            Processing
+                        </span>
+
+                        <span class="response pending">—</span>
+
+                        <span class="latency">0.8s</span>
+
+                        <span class="log-time">14 min ago</span>
+
+                        <span class="row-arrow">→</span>
+                    </a>
+
+                    <a href="email-details.html" class="log-row">
+                        <div class="message-cell">
+                            <div class="message-icon orange-bg">
+                                <svg viewBox="0 0 24 24" fill="none">
+                                    <path d="M5 6.5h14v11H5v-11Z" stroke="currentColor" stroke-width="1.6"/>
+                                    <path d="m5.5 7 6.5 5 6.5-5" stroke="currentColor" stroke-width="1.6"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <strong>msg_3e91cd</strong>
+                                <span>ali.malik@gmail.com</span>
+                            </div>
+                        </div>
+
+                        <span class="event">delivered</span>
+
+                        <span class="status-pill delivered-pill">
+                            <i></i>
+                            Delivered
+                        </span>
+
+                        <span class="response success">250 OK</span>
+
+                        <span class="latency">2.1s</span>
+
+                        <span class="log-time">22 min ago</span>
+
+                        <span class="row-arrow">→</span>
+                    </a>
+
+                    <a href="email-details.html" class="log-row">
+                        <div class="message-cell">
+                            <div class="message-icon blue-bg">
+                                <svg viewBox="0 0 24 24" fill="none">
+                                    <path d="M5 6.5h14v11H5v-11Z" stroke="currentColor" stroke-width="1.6"/>
+                                    <path d="m5.5 7 6.5 5 6.5-5" stroke="currentColor" stroke-width="1.6"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <strong>msg_a18f72</strong>
+                                <span>zoya.ahmed@gmail.com</span>
+                            </div>
+                        </div>
+
+                        <span class="event">delivered</span>
+
+                        <span class="status-pill delivered-pill">
+                            <i></i>
+                            Delivered
+                        </span>
+
+                        <span class="response success">250 OK</span>
+
+                        <span class="latency">1.4s</span>
+
+                        <span class="log-time">31 min ago</span>
+
+                        <span class="row-arrow">→</span>
+                    </a>
+
+                    <a href="email-details.html" class="log-row">
+                        <div class="message-cell">
+                            <div class="message-icon red-bg">
+                                <svg viewBox="0 0 24 24" fill="none">
+                                    <path d="M5 6.5h14v11H5v-11Z" stroke="currentColor" stroke-width="1.6"/>
+                                    <path d="m5.5 7 6.5 5 6.5-5" stroke="currentColor" stroke-width="1.6"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <strong>msg_c92b44</strong>
+                                <span>hamza.siddiqui@gmail.com</span>
+                            </div>
+                        </div>
+
+                        <span class="event">bounced</span>
+
+                        <span class="status-pill failed-pill">
+                            <i></i>
+                            Failed
+                        </span>
+
+                        <span class="response error">550 5.1.1</span>
+
+                        <span class="latency">3.4s</span>
+
+                        <span class="log-time">42 min ago</span>
+
+                        <span class="row-arrow">→</span>
+                    </a>
+
+                    <a href="email-details.html" class="log-row">
+                        <div class="message-cell">
+                            <div class="message-icon purple-bg">
+                                <svg viewBox="0 0 24 24" fill="none">
+                                    <path d="M5 6.5h14v11H5v-11Z" stroke="currentColor" stroke-width="1.6"/>
+                                    <path d="m5.5 7 6.5 5 6.5-5" stroke="currentColor" stroke-width="1.6"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <strong>msg_d82f10</strong>
+                                <span>farhan.ali@gmail.com</span>
+                            </div>
+                        </div>
+
+                        <span class="event">delivered</span>
+
+                        <span class="status-pill delivered-pill">
+                            <i></i>
+                            Delivered
+                        </span>
+
+                        <span class="response success">250 OK</span>
+
+                        <span class="latency">1.9s</span>
+
+                        <span class="log-time">1 hr ago</span>
+
+                        <span class="row-arrow">→</span>
+                    </a>
+
+                    <a href="email-details.html" class="log-row">
+                        <div class="message-cell">
+                            <div class="message-icon orange-bg">
+                                <svg viewBox="0 0 24 24" fill="none">
+                                    <path d="M5 6.5h14v11H5v-11Z" stroke="currentColor" stroke-width="1.6"/>
+                                    <path d="m5.5 7 6.5 5 6.5-5" stroke="currentColor" stroke-width="1.6"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <strong>msg_f7210b</strong>
+                                <span>sameer.khan@gmail.com</span>
+                            </div>
+                        </div>
+
+                        <span class="event">retrying</span>
+
+                        <span class="status-pill retry-pill">
+                            <i></i>
+                            Retrying
+                        </span>
+
+                        <span class="response warning">421 Temp</span>
+
+                        <span class="latency">5.2s</span>
+
+                        <span class="log-time">1 hr ago</span>
+
+                        <span class="row-arrow">→</span>
+                    </a>
+                </div>
+
+                <div class="pagination">
+                    <span>Showing 1–8 of 2,481 events</span>
+
+                    <div class="pagination-buttons">
+                        <button disabled>Previous</button>
+                        <button class="page-number active">1</button>
+                        <button class="page-number">2</button>
+                        <button class="page-number">3</button>
+                        <button class="page-number">4</button>
+                        <button>Next</button>
+                    </div>
+                </div>
+            </section>
+
+            <div class="bottom-grid">
+                <section class="health-panel">
+                    <div class="panel-header compact">
+                        <div>
+                            <h2>Delivery health</h2>
+                            <span>Current sending infrastructure</span>
+                        </div>
+                        <span class="health-status">
+                            <i></i>
+                            Healthy
+                        </span>
+                    </div>
+
+                    <div class="health-content">
+                        <div class="health-item">
+                            <div>
+                                <strong>Delivery rate</strong>
+                                <span>Last 24 hours</span>
+                            </div>
+                            <strong>98.5%</strong>
+                        </div>
+
+                        <div class="progress">
+                            <span style="width: 98.5%"></span>
+                        </div>
+
+                        <div class="health-item">
+                            <div>
+                                <strong>Average latency</strong>
+                                <span>Time to provider response</span>
+                            </div>
+                            <strong>1.8s</strong>
+                        </div>
+
+                        <div class="latency-bar">
+                            <span class="fast"></span>
+                            <span class="medium"></span>
+                            <span class="slow"></span>
+                        </div>
+
+                        <div class="health-footer">
+                            <span><i class="green-dot"></i> Fast</span>
+                            <span><i class="orange-dot"></i> Normal</span>
+                            <span><i class="red-dot"></i> Slow</span>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="events-panel">
+                    <div class="panel-header compact">
+                        <div>
+                            <h2>Event breakdown</h2>
+                            <span>Delivery events today</span>
+                        </div>
+                    </div>
+
+                    <div class="event-breakdown">
+                        <div class="breakdown-item">
+                            <div class="breakdown-label">
+                                <span class="event-dot delivered"></span>
+                                Delivered
+                            </div>
+                            <strong>2,443</strong>
+                            <span>98.5%</span>
+                        </div>
+
+                        <div class="breakdown-item">
+                            <div class="breakdown-label">
+                                <span class="event-dot processing"></span>
+                                Processing
+                            </div>
+                            <strong>20</strong>
+                            <span>0.8%</span>
+                        </div>
+
+                        <div class="breakdown-item">
+                            <div class="breakdown-label">
+                                <span class="event-dot failed"></span>
+                                Failed
+                            </div>
+                            <strong>18</strong>
+                            <span>0.7%</span>
+                        </div>
+
+                        <div class="breakdown-item">
+                            <div class="breakdown-label">
+                                <span class="event-dot retry"></span>
+                                Retrying
+                            </div>
+                            <strong>7</strong>
+                            <span>0.3%</span>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <section class="info-banner">
+                <div class="info-icon">
+                    <svg viewBox="0 0 24 24" fill="none">
+                        <circle cx="12" cy="12" r="8.5" stroke="currentColor" stroke-width="1.7"/>
+                        <path d="M12 10.5v5M12 7.5h.01" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                    </svg>
+                </div>
+
+                <div>
+                    <strong>Delivery logs contain the full lifecycle of every message.</strong>
+                    <span>Use message IDs to trace requests from API acceptance through provider delivery, retries, bounces, and failures.</span>
+                </div>
+
+                <a href="docs.html">Read the docs →</a>
+            </section>
+        </div>
+    </main>
+
+</body>
+</html>

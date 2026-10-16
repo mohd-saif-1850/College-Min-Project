@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developers — Mail Service</title>
+    <link rel="stylesheet" href="developers.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="nav-container">
+
+            <a href="index.html" class="brand">
+                <img src="images/logo.png" alt="Mail Service">
+                <span>Mail Service</span>
+            </a>
+
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="features.html">Features</a>
+                <a href="developers.html" class="active">Developers</a>
+                <a href="docs.html">Docs</a>
+                <a href="pricing.html">Pricing</a>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="dashboard.html" class="dashboard-btn">Dashboard</a>
+                <a href="login.html" class="login-link">Log in</a>
+                <a href="register.html" class="register-btn">Get started</a>
+            </div>
+
+        </div>
+    </header>
+
+
+    <main>
+
+        <section class="developer-hero">
+
+            <div class="hero-container">
+
+                <div class="hero-content">
+
+                    <div class="hero-label">
+                        <span></span>
+                        Developer platform
+                    </div>
+
+                    <h1>
+                        Email APIs that
+                        <span>developers actually want.</span>
+                    </h1>
+
+                    <p>
+                        Integrate email into your application with a clean API,
+                        predictable responses, useful logs, and developer-first
+                        tooling.
+                    </p>
+
+                    <div class="hero-actions">
+
+                        <a href="register.html" class="primary-btn">
+                            Get API access
+                            <span>→</span>
+                        </a>
+
+                        <a href="docs.html" class="secondary-btn">
+                            Read documentation
+                        </a>
+
+                    </div>
+
+                    <div class="developer-points">
+
+                        <div>
+                            <span>✓</span>
+                            <p>REST API</p>
+                        </div>
+
+                        <div>
+                            <span>✓</span>
+                            <p>API keys</p>
+                        </div>
+
+                        <div>
+                            <span>✓</span>
+                            <p>Delivery logs</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="code-window">
+
+                    <div class="code-top">
+
+                        <div class="window-dots">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <div class="code-file">
+                            send-email.js
+                        </div>
+
+                    </div>
+
+
+                    <div class="code-body">
+
+                        <div>
+                            <span class="line-number">01</span>
+                            <span class="code-keyword">const</span>
+                            <span class="code-variable">response</span>
+                            =
+                            <span class="code-keyword">await</span>
+                        </div>
+
+                        <div>
+                            <span class="line-number">02</span>
+                            <span class="code-variable indent-one">mail</span>.
+                            <span class="code-function">emails</span>.
+                            <span class="code-function">send</span>({
+                        </div>
+
+                        <div>
+                            <span class="line-number">03</span>
+                            <span class="indent-two">
+                                <span class="code-property">from</span>:
+                                <span class="code-string">"hello@yourdomain.com"</span>,
+                            </span>
+                        </div>
+
+                        <div>
+                            <span class="line-number">04</span>
+                            <span class="indent-two">
+                                <span class="code-property">to</span>:
+                                <span class="code-string">"user@example.com"</span>,
+                            </span>
+                        </div>
+
+                        <div>
+                            <span class="line-number">05</span>
+                            <span class="indent-two">
+                                <span class="code-property">subject</span>:
+                                <span class="code-string">"Welcome"</span>,
+                            </span>
+                        </div>
+
+                        <div>
+                            <span class="line-number">06</span>
+                            <span class="indent-two">
+                                <span class="code-property">template</span>:
+                                <span class="code-string">"welcome"</span>
+                            </span>
+                        </div>
+
+                        <div>
+                            <span class="line-number">07</span>
+                            });
+                        </div>
+
+                        <div class="code-space"></div>
+
+                        <div>
+                            <span class="line-number">08</span>
+                            <span class="code-comment">// 202 · Email accepted</span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="code-footer">
+
+                        <div>
+                            <span class="status-dot"></span>
+                            Request accepted
+                        </div>
+
+                        <span>POST /v1/emails</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="developer-intro">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="section-label">Built for developers</span>
+
+                    <h2>
+                        From your first request
+                        <span>to production.</span>
+                    </h2>
+
+                    <p>
+                        Mail Service is designed to fit into the way modern
+                        applications are already built. No complicated setup,
+                        unnecessary abstractions, or bloated integration flow.
+                    </p>
+
+                </div>
+
+
+                <div class="developer-grid">
+
+                    <article class="developer-card">
+
+                        <span class="card-number">01</span>
+
+                        <div class="card-icon">API</div>
+
+                        <h3>Simple REST API</h3>
+
+                        <p>
+                            Use familiar HTTP requests to send messages,
+                            manage templates, and interact with your email
+                            infrastructure.
+                        </p>
+
+                        <a href="api.html">
+                            API reference
+                            <span>→</span>
+                        </a>
+
+                    </article>
+
+
+                    <article class="developer-card">
+
+                        <span class="card-number">02</span>
+
+                        <div class="card-icon">KEY</div>
+
+                        <h3>Secure API keys</h3>
+
+                        <p>
+                            Authenticate your application with dedicated
+                            credentials and keep access separated between
+                            environments.
+                        </p>
+
+                        <a href="docs.html">
+                            Authentication
+                            <span>→</span>
+                        </a>
+
+                    </article>
+
+
+                    <article class="developer-card">
+
+                        <span class="card-number">03</span>
+
+                        <div class="card-icon">LOG</div>
+
+                        <h3>Useful logs</h3>
+
+                        <p>
+                            Inspect requests, message states, and delivery
+                            activity when something needs your attention.
+                        </p>
+
+                        <a href="dashboard.html">
+                            View dashboard
+                            <span>→</span>
+                        </a>
+
+                    </article>
+
+
+                    <article class="developer-card">
+
+                        <span class="card-number">04</span>
+
+                        <div class="card-icon">ENV</div>
+
+                        <h3>Environment friendly</h3>
+
+                        <p>
+                            Keep development, testing, and production
+                            credentials and workflows separated.
+                        </p>
+
+                        <a href="docs.html">
+                            Environment guide
+                            <span>→</span>
+                        </a>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="integration-section">
+
+            <div class="container integration-container">
+
+                <div class="integration-content">
+
+                    <span class="section-label">01 · Integration</span>
+
+                    <h2>
+                        Add email without
+                        <span>rewriting your backend.</span>
+                    </h2>
+
+                    <p>
+                        Mail Service works alongside the stack you're already
+                        using. Send requests from your server, handle the
+                        response, and keep the rest of your application focused
+                        on your product.
+                    </p>
+
+                    <div class="stack-list">
+
+                        <div class="stack-item">
+                            <span>JS</span>
+                            <div>
+                                <strong>Node.js</strong>
+                                <p>Works naturally with server-side JavaScript.</p>
+                            </div>
+                        </div>
+
+                        <div class="stack-item">
+                            <span>PY</span>
+                            <div>
+                                <strong>Python</strong>
+                                <p>Integrate using standard HTTP requests.</p>
+                            </div>
+                        </div>
+
+                        <div class="stack-item">
+                            <span>GO</span>
+                            <div>
+                                <strong>Go</strong>
+                                <p>Connect directly from your backend services.</p>
+                            </div>
+                        </div>
+
+                        <div class="stack-item">
+                            <span>HTTP</span>
+                            <div>
+                                <strong>Any HTTP client</strong>
+                                <p>Use Mail Service from virtually any stack.</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="request-window">
+
+                    <div class="request-header">
+
+                        <div class="request-tabs">
+                            <span class="active-tab">Request</span>
+                            <span>Response</span>
+                        </div>
+
+                        <span class="request-method">POST</span>
+
+                    </div>
+
+
+                    <div class="request-body">
+
+                        <div class="request-url">
+                            https://api.mailservice.dev/v1/emails
+                        </div>
+
+
+                        <div class="request-section">
+                            <span class="request-label">Authorization</span>
+
+                            <div class="request-row">
+                                <span class="property">Authorization</span>
+                                <span class="value">Bearer ms_live_••••••••</span>
+                            </div>
+                        </div>
+
+
+                        <div class="request-section">
+                            <span class="request-label">Body</span>
+
+                            <div class="request-code">
+                                <div>{</div>
+                                <div class="request-indent">
+                                    <span>"to"</span>:
+                                    <strong>"user@example.com"</strong>,
+                                </div>
+                                <div class="request-indent">
+                                    <span>"subject"</span>:
+                                    <strong>"Welcome"</strong>,
+                                </div>
+                                <div class="request-indent">
+                                    <span>"template"</span>:
+                                    <strong>"welcome"</strong>
+                                </div>
+                                <div>}</div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="request-footer">
+
+                        <span class="response-success">202 Accepted</span>
+
+                        <span>142ms</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="api-section">
+
+            <div class="container api-container">
+
+                <div class="api-window">
+
+                    <div class="api-window-header">
+
+                        <div>
+                            <span class="window-title">API Reference</span>
+                            <span class="window-subtitle">v1</span>
+                        </div>
+
+                        <span class="api-version">Stable</span>
+
+                    </div>
+
+
+                    <div class="api-layout">
+
+                        <aside class="api-sidebar">
+
+                            <span class="sidebar-label">EMAILS</span>
+
+                            <a href="api.html" class="sidebar-active">
+                                Send email
+                            </a>
+
+                            <a href="api.html">
+                                Get email
+                            </a>
+
+                            <a href="api.html">
+                                List emails
+                            </a>
+
+                            <span class="sidebar-label">TEMPLATES</span>
+
+                            <a href="api.html">
+                                Create template
+                            </a>
+
+                            <a href="api.html">
+                                List templates
+                            </a>
+
+                        </aside>
+
+
+                        <div class="api-details">
+
+                            <div class="endpoint-heading">
+
+                                <span class="http-method">POST</span>
+
+                                <strong>/v1/emails</strong>
+
+                            </div>
+
+                            <p>
+                                Create and send a transactional email.
+                            </p>
+
+
+                            <div class="endpoint-block">
+
+                                <span>Request body</span>
+
+                                <div class="parameter-row">
+                                    <strong>to</strong>
+                                    <span>string · required</span>
+                                </div>
+
+                                <div class="parameter-row">
+                                    <strong>subject</strong>
+                                    <span>string · required</span>
+                                </div>
+
+                                <div class="parameter-row">
+                                    <strong>template</strong>
+                                    <span>string · optional</span>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="api-content">
+
+                    <span class="section-label">02 · API reference</span>
+
+                    <h2>
+                        Clear APIs.
+                        <span>Predictable behavior.</span>
+                    </h2>
+
+                    <p>
+                        Find endpoints, request parameters, authentication
+                        details, response formats, and examples without
+                        digging through unnecessary documentation.
+                    </p>
+
+                    <a href="api.html" class="primary-btn">
+                        Open API reference
+                        <span>→</span>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="auth-section">
+
+            <div class="container auth-container">
+
+                <div class="auth-content">
+
+                    <span class="section-label">03 · Authentication</span>
+
+                    <h2>
+                        Keep your credentials
+                        <span>under control.</span>
+                    </h2>
+
+                    <p>
+                        API keys provide a straightforward way for your
+                        application to authenticate with Mail Service while
+                        keeping credentials separate from your email logic.
+                    </p>
+
+                    <div class="auth-list">
+
+                        <div>
+                            <span>01</span>
+                            <div>
+                                <strong>Project keys</strong>
+                                <p>Keep credentials associated with a specific project.</p>
+                            </div>
+                        </div>
+
+                        <div>
+                            <span>02</span>
+                            <div>
+                                <strong>Environment separation</strong>
+                                <p>Use different credentials for development and production.</p>
+                            </div>
+                        </div>
+
+                        <div>
+                            <span>03</span>
+                            <div>
+                                <strong>Controlled access</strong>
+                                <p>Rotate credentials when your application requires it.</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="key-card">
+
+                    <div class="key-card-header">
+                        <span>API key</span>
+                        <span class="key-live">LIVE</span>
+                    </div>
+
+
+                    <div class="key-value">
+                        <span>ms_live_</span>
+                        <strong>••••••••••••••••</strong>
+                    </div>
+
+
+                    <div class="key-meta">
+
+                        <div>
+                            <span>Created</span>
+                            <strong>Today</strong>
+                        </div>
+
+                        <div>
+                            <span>Last used</span>
+                            <strong>2 min ago</strong>
+                        </div>
+
+                    </div>
+
+
+                    <div class="key-actions">
+                        <button>Copy key</button>
+                        <button>Rotate</button>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="workflow-section">
+
+            <div class="container">
+
+                <div class="section-heading centered">
+
+                    <span class="section-label">Your workflow</span>
+
+                    <h2>
+                        From request
+                        <span>to delivery.</span>
+                    </h2>
+
+                    <p>
+                        A simple flow keeps email responsibilities separate
+                        from the rest of your application's business logic.
+                    </p>
+
+                </div>
+
+
+                <div class="workflow">
+
+                    <div class="workflow-step">
+
+                        <div class="step-number">01</div>
+
+                        <div class="step-line"></div>
+
+                        <h3>Create</h3>
+
+                        <p>
+                            Your application creates an email request.
+                        </p>
+
+                    </div>
+
+
+                    <div class="workflow-step">
+
+                        <div class="step-number">02</div>
+
+                        <div class="step-line"></div>
+
+                        <h3>Send</h3>
+
+                        <p>
+                            Mail Service accepts and processes the message.
+                        </p>
+
+                    </div>
+
+
+                    <div class="workflow-step">
+
+                        <div class="step-number">03</div>
+
+                        <div class="step-line"></div>
+
+                        <h3>Track</h3>
+
+                        <p>
+                            Follow the message through its delivery lifecycle.
+                        </p>
+
+                    </div>
+
+
+                    <div class="workflow-step">
+
+                        <div class="step-number">04</div>
+
+                        <h3>Understand</h3>
+
+                        <p>
+                            Use logs and status information when needed.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="developer-resources">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="section-label">Developer resources</span>
+
+                    <h2>
+                        Everything you need
+                        <span>to build with Mail Service.</span>
+                    </h2>
+
+                </div>
+
+
+                <div class="resource-grid">
+
+                    <a href="docs.html" class="resource-card">
+
+                        <span class="resource-number">01</span>
+
+                        <h3>Documentation</h3>
+
+                        <p>
+                            Guides and integration instructions for getting
+                            your application connected.
+                        </p>
+
+                        <strong>Read docs →</strong>
+
+                    </a>
+
+
+                    <a href="api.html" class="resource-card">
+
+                        <span class="resource-number">02</span>
+
+                        <h3>API reference</h3>
+
+                        <p>
+                            Detailed endpoint documentation with parameters,
+                            responses, and examples.
+                        </p>
+
+                        <strong>Explore API →</strong>
+
+                    </a>
+
+
+                    <a href="dashboard.html" class="resource-card">
+
+                        <span class="resource-number">03</span>
+
+                        <h3>Dashboard</h3>
+
+                        <p>
+                            Manage projects, keys, templates, messages,
+                            and delivery activity.
+                        </p>
+
+                        <strong>Open dashboard →</strong>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="developer-cta">
+
+            <div class="container cta-container">
+
+                <div>
+
+                    <span class="section-label">Start building</span>
+
+                    <h2>
+                        Your next email integration
+                        <span>starts here.</span>
+                    </h2>
+
+                    <p>
+                        Create your account, get your API key, and send
+                        your first message.
+                    </p>
+
+                </div>
+
+
+                <div class="cta-actions">
+
+                    <a href="register.html" class="primary-btn">
+                        Create account
+                        <span>→</span>
+                    </a>
+
+                    <a href="docs.html" class="secondary-btn">
+                        Read docs
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <div class="footer-brand">
+
+                <a href="index.html" class="brand">
+                    <img src="images/logo.png" alt="Mail Service">
+                    <span>Mail Service</span>
+                </a>
+
+                <p>
+                    Reliable email delivery for modern applications.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <div>
+                    <strong>Product</strong>
+                    <a href="features.html">Features</a>
+                    <a href="developers.html">Developers</a>
+                    <a href="pricing.html">Pricing</a>
+                    <a href="dashboard.html">Dashboard</a>
+                </div>
+
+
+                <div>
+                    <strong>Resources</strong>
+                    <a href="docs.html">Documentation</a>
+                    <a href="api.html">API Reference</a>
+                    <a href="status.html">Status</a>
+                </div>
+
+
+                <div>
+                    <strong>Company</strong>
+                    <a href="about.html">About</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="privacy.html">Privacy</a>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <span>© 2026 Mail Service. All rights reserved.</span>
+
+            <div>
+                <a href="privacy.html">Privacy</a>
+                <a href="terms.html">Terms</a>
+            </div>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>
